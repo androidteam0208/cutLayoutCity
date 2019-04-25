@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>City</title>
+
+    <!-- font face -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!-- Style -->
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <!--Start Header-->
+    <header class="header">
+        <section class="header__content">
+            <span class="header__logo"><img src="./image/logo.png" alt="city"></span>
+            <input type="text" placeholder="Search" class="header__input">
+            <button class="header__search"><i class="fa fa-search icon"></i></button>
+            <span class="header__icon icon"><i class="fa fa-user"></i></span>
+        </section>
+    </header>
+    <!-- end header -->
+
+    <!-- Start Thanh navbar -->
+    <div class="navbar">
+        <ul class="navbar__ul">
+            <li class="navbar__li four_item">WoOw!<i class="fa fa-caret-down"></i></li>
+            <li class="navbar__li four_item">City!<i class="fa fa-caret-down"></i></li>
+            <li class="navbar__li four_item">Shop!<i class="fa fa-caret-down"></i></li>
+            <li class="navbar__li four_item">Travel!<i class="fa fa-caret-down"></i></li>
+            <li class="navbar__li">Gastronomia!<i class="fa fa-caret-down"></i></li>
+            <li class="navbar__li">Estetica Y BienEsta<i class="fa fa-caret-down"></i></li>
+            <li class="navbar__li">Peluqueria<i class="fa fa-caret-down"></i></li>
+            <li class="navbar__li">Cetelera<i class="fa fa-caret-down"></i></li>
+            <li class="navbar__li">Tiempo Libre<i class="fa fa-caret-down"></i></li>
+            <li class="navbar__li">Autos<i class="fa fa-caret-down"></i></li>
+            <li class="navbar__li">Cursos<i class="fa fa-caret-down"></i></li>
+            <li class="navbar__li">Masorvios<i class="fa fa-caret-down"></i></li>
+        </ul>
+    </div>
+    <!-- end navbar -->
+
+    <!--start banner image-->
+    <section class="banner">
+        <div class="banner__content">
+            <!-- title -->
+            <h2 class="banner__title title">Reservá tu restaurante.</h2>
+            <!-- text -->
+            <p class="banner__text">Mediterráneos, japoneses y de sushi, románticos, con menú, con ofertas... Y muscho
+                mas , al mejor precio ! </p>
+
+            <!-- nav of selected input and buuton -->
+            <div class="banner__bar">
+                <div class="banner__input">
+                    <label for="fecha" class="label">Fecha</label>
+                    <br />
+                    <select name="fecha" id="fecha" class="select">
+                        <option value="1">Cualquier fecha</option>
+                    </select>
+                </div>
+                <div class="banner__input">
+                    <label for="Barrio" class="label">Barrio</label>
+                    <br />
+                    <select name="Barrio" id="Barrio" class="select">
+                        <option value="1">Cualquier barrio </option>
+                    </select>
+                </div>
+                <div class="banner__input">
+                    <label for="Tipo" class="label">Tipo de comida </label>
+                    <br />
+                    <select name="Tipo" id="Tipo" class="select">
+                        <option value="1">Cualquier tipo de comida </option>
+                    </select>
+                </div>
+                <div class="banner__input">
+                    <label for=""></label>
+                    <br />
+                    <button class="banner__button select">Buscar</button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- end banner image -->
+
+    <!--start gallery  -->
+    <section class="gallery">
+        <p class="gallery__title title">Inspirate con nuestras selecciones en: copia</p>
+        <div class="gallery__content">
+            <div>
+                <div class="gallery__item item1">
+                    <img src="./image/catalog1.jpg" alt="" class="imageCatalog">
+                    <div class="item__content">
+                        <p>A la carta</p>
+                        <p>32 restaurantes</p>
+                    </div>
+
+                </div>
+                <div class="gallery__item item5">
+                    <img src="./image/catalog2.jpg" alt="" class="imageCatalog">
+                    <div class="item__content">
+                        <p>Café y antojos</p>
+                        <p>35 restaurantes</p>
+                    </div>
+
+                </div>
+            </div>
+            <div>
+                <div class="gallery__item item2">
+                    <img src="./image/catalog3.jpg" alt="" class="imageCatalog">
+                    <div class="item__content">
+                        <p>Parrilla</p>
+                        <p>25 restaurantes</p>
+                    </div>
+
+                </div>
+                <div class="gallery__item item6">
+                    <img src="./image/catalog4.jpg" alt="" class="imageCatalog">
+                    <div class="item__content">
+                        <p>Sushi</p>
+                        <p>16 restaurantes</p>
+                    </div>
+
+                </div>
+
+            </div>
+            <div>
+                <div class="gallery__item item3">
+                    <img src="./image/catalog5.jpg" alt="" class="imageCatalog">
+                    <div class="item__content">
+                        <p>Buffet</p>
+                        <p>37 restaurantes</p>
+                    </div>
+
+                </div>
+                <div class="gallery__item item7">
+                    <img src="./image/catalog6.jpg" alt="" class="imageCatalog">
+                    <div class="item__content">
+                        <p>Minutas</p>
+                        <p>16 restaurantes</p>
+                    </div>
+
+                </div>
+            </div>
+            <div>
+                <div class="gallery__item item4">
+                    <img src="./image/catalog7.jpg" alt="" class="imageCatalog">
+                    <div class="item__content">
+                        <p>Confitería y festejos</p>
+                        <p>37 restaurantes</p>
+                    </div>
+
+                </div>
+                <div class="gallery__item item8">
+                    <img src="./image/catalog8.jpg" alt="" class="imageCatalog">
+                    <div class="item__content">
+                        <p>Tienda</p>
+                        <p>120 restaurantes</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+    </section>
+    <!-- end catelory -->
+
+    <!-- start slider -->
+    <section class="slider">
+        <div class="slider__header">
+            <p class="title slider__title">¿Donde vamos a comer?</p>
+            <p class="slider__text">Los mejores planes gastronómicos del momento</p>
+        </div>
+
+        <div class="slider__content">
+
+            <!-- item1 -->
+            <div class="slider__item item1">
+                <!--phan giam gia tren goc phai  -->
+                <p class="item__discount">-20%</p>
+                <!-- phan hinh anh -->
+                <img src="./image/slide1.jpg" alt="" class="imageslider">
+                <!-- noi dung cua hinh -->
+                <div class="item__content">
+                     <!-- phan tieu de cua 1 item trong slider -->
+                    <p class="item__title">La Pasiva</p>
+                    <p>Buceo | Gastronomía</p>
+                     <!-- phan số  mau do item trong slider -->
+                    <span class="item__number">6</span>
+                    <!-- phan diem  -->
+                    <span class="item__point">Bueno (50 opiniones)</span>
+                </div>
+
+                <!-- div chứa phần resrer (footer cua item) -->
+                <div class="item__reser">
+                    <p>Desde</p>
+                    <span class="reser__cost"$800></span>
+                    <button class="reser__button">Reservar</button>
+                </div>
+
+            </div>
+
+            <!-- item 2 -->
+            <div class="slider__item item2">
+                <!--phan giam gia tren goc phai  -->
+                <p class="item__discount">-20%</p>
+                <!-- phan hinh anh -->
+                <img src="./image/slide2.jpg" alt="" class="imageslider">
+                <div class="item__content">
+                    <!-- phan tieu de cua 1 item trong slider -->
+                    <p class="item__title">Temaki Sushi</p>
+                    <p>Punta Carretas | Gastronomía</p>
+                    <span class="item__number">10</span>
+                    <span class="item__point" >Excelente!!! (1450 opiniones)</span>
+                </div>
+                <!-- div chứa phần resrer (footer cua item) -->
+                <div class="item__reser">
+                    <p>Desde</p>
+                    <span class="reser__cost"$500></span>
+                    <button class="reser__button">Reservar</button>
+                </div>
+
+            </div>
+
+            <!-- item3 -->
+            <div class="slider__item item3">
+                <!--phan giam gia tren goc phai  -->
+                <p class="item__discount">-20%</p>
+                <!-- phan hinh anh -->
+                <img src="./image/silde3.jpg" alt="" class="imageslider">
+                <div class="item__content">
+                    <p class="item__title">Francis</p>
+                    <p>Punta Carretas| Gastronomía</p>
+                    <span class="item__number">8</span>
+                    <span class="item__point">Muy bueno (550 opiniones)</span>
+                </div>
+                <!-- div chứa phần resrer (footer cua item) -->
+                <div class="item__reser">
+                    <p>Desde</p>
+                    <span class="reser__cost"$1250></span>
+                    <button class="reser__button">Reservar</button>
+                </div>
+            </div>
+
+    </section>
+    
+
+</body>
+
+</html>
