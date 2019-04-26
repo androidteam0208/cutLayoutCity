@@ -12,11 +12,12 @@ header, section, footer, aside, nav, main, article, figure {
     color: black;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
+    background: #f0f0f0;
     
   }
   /* style all title */
   .title{
-    font-size: 25pt; 
+    font-size: 25px; 
     text-align: center;
   }
   
@@ -43,10 +44,12 @@ header, section, footer, aside, nav, main, article, figure {
     
   } */
   .header__logo img{
+    display: inline-block;
     width:80px;
     height: auto;
     position: relative;
     top: 10px;
+    margin-right: 40px;
   }
 
   .header__input{
@@ -147,6 +150,12 @@ header, section, footer, aside, nav, main, article, figure {
 .banner__title , .banner__text , label{
   color: white;
 }
+.banner__title{
+  font-size: 36px;
+}
+.banner__text , label{
+  font-size: 16px;
+}
 
 .banner__button{
   background-color: #d30c0f;
@@ -155,22 +164,29 @@ header, section, footer, aside, nav, main, article, figure {
 
 /* gallery */
 .gallery{
-  width: 80%;
+  width: 76%;
   margin: 50px auto;
 
 }
 .gallery__content {
   display: flex;
+  justify-content :  space-between;
   flex-wrap: wrap;
+  
 }
 /* phan title cua gallery */
 .gallery__title{
-  font-weight: lighter;
+  font-size: 24px;
+  font-weight: 300;
   padding-bottom: 20px;
 }
 .gallery__item{
   position: relative;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  overflow: hidden;
 }
+
 /* noi dung ben trong cac image */
 .gallery__item .item__content{
   position: absolute;
@@ -179,12 +195,25 @@ header, section, footer, aside, nav, main, article, figure {
   text-align: center;
   color: whitesmoke;
 }
+.gallery__item img{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.gallery__item .item__content p:first-child{
+  font-size: 16px;
+  font-weight: 600;
+}
+.gallery__item .item__content p:last-child{
+  font-size: 16px;
+  font-weight: 300;
+}
 
 /* end gallery */
 
 /* slider */
 .slider{
-  width: 80%;
+  width: 75%;
   margin: 0 auto;
 }
 /* title and text at head of slide */
@@ -192,33 +221,51 @@ header, section, footer, aside, nav, main, article, figure {
   text-align: center;
   padding-bottom: 30px;
 }
+.slider__text{
+  color: #6e6e6e;
+}
 /* dàn hàng ngang */
 .slider__content{
   display: flex;
   justify-content: space-between;
 }
-/* set kich thuoc cua 1 slide */
+/* set style cua 1 slide */
 .slider__item{
-  width: 30%;
-  position: relative;
+  width: 32%;
+  border-radius: 4px;
   overflow: hidden;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+  
 
 }
-/* set kich thuoc hinh anh */
-.slider__item .imageslider{
-  display: block;
-  width: 110%;
-  height: 100%;
-  border-radius:  8px;
+/* set style cho phần top */
+.slider__item .item__top{
+  width: 100%;
+  height: 290px;
+  position: relative; 
+  background-size: cover;
+  overflow: hidden;
 }
+/* background cho từng item */
+.slider__content .item1 .item__top{
+  background-image: url("../image/slider1.jpg");
+}
+.slider__content .item2 .item__top{
+  background-image: url("../image/slider2.jpg");
+}
+.slider__content .item3 .item__top{
+  background-image: url("../image/slider3.jpg");
+}
+
 /* set vi tri cua phan noi dung hinh anh */
 .slider__item .item__content{
   position: absolute;
   bottom: 10px;
   left: 10px;
   width: 100%;
-  color: whitesmoke;
+  color: white;
 }
+/* set phan title trong slide */
 .slider__item .item__title{
   font-weight: 600;
   font-size: 24px;
@@ -226,14 +273,21 @@ header, section, footer, aside, nav, main, article, figure {
 .slider__item .item__number , .item__point{
   font-size: 13px;
 }
-/* so mau đỏ */
-.slider__item .item__number {
+/*ô số mau đỏ */
+.item__number {
   display: inline-block;
-  width: 30px;
-  background-color: #d30c0f;
+  width: 32px;
+  height: 20px;
   border-radius: 10px;
+  background-color: #d30c0f;
+  color: white;
+  font-size: 13px;
+  line-height: 20px;
   text-align: center;
+
 }
+
+/* phan discount màu vàng phía trên bên phải */
 .slider__item .item__discount{
   position: absolute;
   right: -27px;
@@ -244,4 +298,208 @@ header, section, footer, aside, nav, main, article, figure {
   font-weight: bold;
   font-size: 15px;
   transform: rotate(45deg);
+}
+
+/* phần footer (reser) của slider */
+.slider__item .item__reser{
+  padding: 5px 15px 15px 15px;
+  line-height: 28px;
+}
+.slider__item .item__reser p{
+  color: #444444;
+}
+.slider__item .reser__button{
+  float: right;
+  width: 130px;
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 2px 0px 0px #6a1415;
+  background-color: rgb(211, 12, 15);
+  color: #ffff;
+}
+.slider__item .reser__cost{
+  font-size: 30px;
+  font-weight: 600;
+}
+/* end slider */
+
+
+/* start menu ********/
+.menu{
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  margin: 70px auto;
+}
+.menu__title{
+  font-size: 18px;
+  font-weight: 300;
+  padding-bottom: 20px; 
+}
+.menu__col{
+  width: 32%;
+}
+.menu__item{
+  width: 100%;
+  margin-bottom: 7px;
+  padding: 15px 10px;
+  background: #ffff;
+  border-radius: 4px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+  
+}
+.menu__item .item__title{
+  font-weight: 600;
+  font-size: 18px;
+}
+.menu__item .item_decript {
+  font-size: 14px;
+  color: #444444;
+  padding-bottom: 15px;
+}
+.menu__item .item__point{
+  font-size: 13px;
+  color: #444444;
+  font-weight: 600;
+}
+.menu__item  .item__cost{
+  font-size: 14px;
+  float: right;
+  font-weight: bold;
+}
+.menu__item  .item__cost b{
+  font-size: 20px;
+}
+
+/* end menu */
+
+/* <!-- start registment (màu đỏ phía dưới) --> */
+.registment{
+  width: 100%;
+  background-color:#8a1322;
+  
+}
+.registment__content{
+  width:63%;
+  display: flex;
+  margin: 0 auto;
+  
+  padding: 30px 0;
+}
+.registment__text{
+  width: 50%;
+  text-align: right;
+  color: white
+}
+.registment__text p:first-child{
+  font-size: 24px;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+.registment__text p:last-child{
+  font-size: 16px;
+  font-weight: 300;
+}
+.registment__button{
+  width: 50%;
+  padding-left: 50px;  
+}
+.registment__button button{
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+  border: none;
+  color: #6a1415;
+  background-color: rgb(255, 134, 136);
+  box-shadow: 0px 4px 0px 0px rgba(106, 20, 21, 0.004);
+  width: 160px;
+  height: 40px;
+  position: relative;
+  top: 30px;
+}
+/* footer */
+.footer{
+  width: 100%;
+  background: black;
+  color: white;
+  
+}
+
+.footer__contenttop{
+  width: 80%;
+  margin:  auto;
+  display: flex;
+  font-size: 14px;
+  color: gray;
+  font-weight: 300;
+  padding-top: 30px;
+}
+.footer__contenttop .footer__col{
+  width: 33%;
+}
+
+.footer__contenttop .footer__col dt{
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+.footer__contenttop .footer__col .col__item{
+  margin-bottom: 20px;
+}
+
+.footer__contenttop .col3 img{
+  position: relative;
+  top: 50px;
+}
+.footer__title{
+  font-weight: 400;
+}
+
+.footer__contentbot{
+  text-align: center;
+}
+.footer__contentbot .footer__title{
+  padding: 40px 0px 20px 0px;
+}
+.footer__contentbot .social__icons i{
+  color: white;
+  width: 50px;font-size: 30px;
+}
+.footer__contentbot .paycard{
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  padding: 15px 100px;
+  border: 1px solid gray;
+}
+.footer__contentbot .paycard li{
+  list-style: none;
+  padding: 0px 15px;
+}
+.footer__contentbot .paycard li img{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.footer_dac{
+  font-size: 15px;
+  font-weight: 400;
+  height: 40px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.footer_dac img{
+  position: relative;
+  top: 7px;
+}
+.footer__logo img{
+  height: 32px;
+  width: 80px;
+}
+.copyright{
+  font-size: 12px;
+    color: #444;
 }
