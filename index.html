@@ -20,574 +20,577 @@
 </head>
 
 <body>
-    <!--Start Header-->
+    <div class="cover">
+         <!--Start Header-->
     <header class="header">
-        <section class="header__content">
-            <span class="header__logo"><img src="./image/logo.png" alt="city"></span>
-            <input type="text" placeholder="Search" class="header__input">
-            <button class="header__search"><i class="fa fa-search icon"></i></button>
-            <span class="header__icon icon"><i class="fa fa-user"></i></span>
+            <div class="header__content">
+                <span class="header__logo"><img src="./image/logo.png" alt="city"></span>
+                <input type="text" placeholder="Search" class="header__input">
+                <button class="header__search"><i class="fa fa-search icon"></i></button>
+                <span class="header__icon icon"><i class="fa fa-user"></i></span>
+            </div>
+        </header>
+        <!-- end header -->
+    
+        <!-- Start Thanh navbar -->
+        <div class="navbar">
+            <ul class="navbar__ul">
+                <li class="navbar__li four_item">WoOw!<i class="fa fa-caret-down"></i></li>
+                <li class="navbar__li four_item">City!<i class="fa fa-caret-down"></i></li>
+                <li class="navbar__li four_item">Shop!<i class="fa fa-caret-down"></i></li>
+                <li class="navbar__li four_item">Travel!<i class="fa fa-caret-down"></i></li>
+                <li class="navbar__li">Gastronomia!<i class="fa fa-caret-down"></i></li>
+                <li class="navbar__li">Estetica Y BienEsta<i class="fa fa-caret-down"></i></li>
+                <li class="navbar__li">Peluqueria<i class="fa fa-caret-down"></i></li>
+                <li class="navbar__li">Cetelera<i class="fa fa-caret-down"></i></li>
+                <li class="navbar__li">Tiempo Libre<i class="fa fa-caret-down"></i></li>
+                <li class="navbar__li">Autos<i class="fa fa-caret-down"></i></li>
+                <li class="navbar__li">Cursos<i class="fa fa-caret-down"></i></li>
+                <li class="navbar__li">Masorvios<i class="fa fa-caret-down"></i></li>
+            </ul>
+        </div>
+        <!-- end navbar -->
+    
+        <!--start banner image-->
+        <section class="banner">
+            <div class="banner__content">
+                <!-- title -->
+                <h2 class="banner__title title">Reservá tu restaurante.</h2>
+                <!-- text -->
+                <p class="banner__text">Mediterráneos, japoneses y de sushi, románticos, con menú, con ofertas... Y muscho
+                    mas , al mejor precio ! </p>
+    
+                <!-- nav of selected input and buuton -->
+                <div class="banner__bar">
+                    <div class="banner__input">
+                        <label for="fecha" class="banner__label">Fecha</label>
+                        <br />
+                        <select name="fecha" id="fecha" class="select">
+                            <option value="1">Cualquier fecha</option>
+                        </select>
+                    </div>
+                    <div class="banner__input">
+                        <label for="Barrio" class="banner__label">Barrio</label>
+                        <br />
+                        <select name="Barrio" id="Barrio" class="select">
+                            <option value="1">Cualquier barrio </option>
+                        </select>
+                    </div>
+                    <div class="banner__input">
+                        <label for="Tipo" class="banner__label">Tipo de comida </label>
+                        <br />
+                        <select name="Tipo" id="Tipo" class="select">
+                            <option value="1">Cualquier tipo de comida </option>
+                        </select>
+                    </div>
+                    <div class="banner__input">
+                        <br />
+                        <button class="banner__button select ">Buscar</button>
+                    </div>
+    
+                </div>
+    
+            </div>
         </section>
-    </header>
-    <!-- end header -->
-
-    <!-- Start Thanh navbar -->
-    <div class="navbar">
-        <ul class="navbar__ul">
-            <li class="navbar__li four_item">WoOw!<i class="fa fa-caret-down"></i></li>
-            <li class="navbar__li four_item">City!<i class="fa fa-caret-down"></i></li>
-            <li class="navbar__li four_item">Shop!<i class="fa fa-caret-down"></i></li>
-            <li class="navbar__li four_item">Travel!<i class="fa fa-caret-down"></i></li>
-            <li class="navbar__li">Gastronomia!<i class="fa fa-caret-down"></i></li>
-            <li class="navbar__li">Estetica Y BienEsta<i class="fa fa-caret-down"></i></li>
-            <li class="navbar__li">Peluqueria<i class="fa fa-caret-down"></i></li>
-            <li class="navbar__li">Cetelera<i class="fa fa-caret-down"></i></li>
-            <li class="navbar__li">Tiempo Libre<i class="fa fa-caret-down"></i></li>
-            <li class="navbar__li">Autos<i class="fa fa-caret-down"></i></li>
-            <li class="navbar__li">Cursos<i class="fa fa-caret-down"></i></li>
-            <li class="navbar__li">Masorvios<i class="fa fa-caret-down"></i></li>
-        </ul>
-    </div>
-    <!-- end navbar -->
-
-    <!--start banner image-->
-    <section class="banner">
-        <div class="banner__content">
-            <!-- title -->
-            <h2 class="banner__title title">Reservá tu restaurante.</h2>
-            <!-- text -->
-            <p class="banner__text">Mediterráneos, japoneses y de sushi, románticos, con menú, con ofertas... Y muscho
-                mas , al mejor precio ! </p>
-
-            <!-- nav of selected input and buuton -->
-            <div class="banner__bar">
-                <div class="banner__input">
-                    <label for="fecha" class="banner__label">Fecha</label>
-                    <br />
-                    <select name="fecha" id="fecha" class="select">
-                        <option value="1">Cualquier fecha</option>
-                    </select>
+        <!-- end banner image -->
+    
+        <!--start gallery  -->
+        <section class="gallery">
+            <p class="gallery__title title">Inspirate con nuestras selecciones en</p>
+            <div class="gallery__content">
+                <div class="gallery__col">
+                    <div class="gallery__item item1">
+                        <img src="./image/catalog1.jpg" alt="" class="imageCatalog">
+                        <div class="item__content">
+                            <p>A la carta</p>
+                            <p>32 restaurantes</p>
+                        </div>
+    
+                    </div>
+                    <div class="gallery__item item5">
+                        <img src="./image/catalog2.jpg" alt="" class="imageCatalog">
+                        <div class="item__content">
+                            <p>Café y antojos</p>
+                            <p>35 restaurantes</p>
+                        </div>
+    
+                    </div>
                 </div>
-                <div class="banner__input">
-                    <label for="Barrio" class="banner__label">Barrio</label>
-                    <br />
-                    <select name="Barrio" id="Barrio" class="select">
-                        <option value="1">Cualquier barrio </option>
-                    </select>
+                <div class="gallery__col">
+                    <div class="gallery__item item2">
+                        <img src="./image/catalog3.jpg" alt="" class="imageCatalog">
+                        <div class="item__content">
+                            <p>Parrilla</p>
+                            <p>25 restaurantes</p>
+                        </div>
+    
+                    </div>
+                    <div class="gallery__item item6">
+                        <img src="./image/catalog4.jpg" alt="" class="imageCatalog">
+                        <div class="item__content">
+                            <p>Sushi</p>
+                            <p>16 restaurantes</p>
+                        </div>
+    
+                    </div>
+    
                 </div>
-                <div class="banner__input">
-                    <label for="Tipo" class="banner__label">Tipo de comida </label>
-                    <br />
-                    <select name="Tipo" id="Tipo" class="select">
-                        <option value="1">Cualquier tipo de comida </option>
-                    </select>
+                <div class="gallery__col">
+                    <div class="gallery__item item3">
+                        <img src="./image/catalog5.jpg" alt="" class="imageCatalog">
+                        <div class="item__content">
+                            <p>Buffet</p>
+                            <p>37 restaurantes</p>
+                        </div>
+    
+                    </div>
+                    <div class="gallery__item item7">
+                        <img src="./image/catalog6.jpg" alt="" class="imageCatalog">
+                        <div class="item__content">
+                            <p>Minutas</p>
+                            <p>16 restaurantes</p>
+                        </div>
+    
+                    </div>
                 </div>
-                <div class="banner__input">
-                    <br />
-                    <button class="banner__button select ">Buscar</button>
+                <div class="gallery__col">
+                    <div class="gallery__item item4">
+                        <img src="./image/catalog7.jpg" alt="" class="imageCatalog">
+                        <div class="item__content">
+                            <p>Confitería y festejos</p>
+                            <p>37 restaurantes</p>
+                        </div>
+    
+                    </div>
+                    <div class="gallery__item item8">
+                        <img src="./image/catalog8.jpg" alt="" class="imageCatalog">
+                        <div class="item__content">
+                            <p>Tienda</p>
+                            <p>120 restaurantes</p>
+                        </div>
+    
+                    </div>
                 </div>
-
+                </div>
+    
+        </section>
+        <!-- end catelory -->
+    
+        <!-- start slider -->
+        <section class="slider">
+            <div class="slider__header">
+                <p class="title slider__title">¿Donde vamos a comer?</p>
+                <p class="slider__text">Los mejores planes gastronómicos del momento</p>
             </div>
-
-        </div>
-    </section>
-    <!-- end banner image -->
-
-    <!--start gallery  -->
-    <section class="gallery">
-        <p class="gallery__title title">Inspirate con nuestras selecciones en</p>
-        <div class="gallery__content">
-            <div class="gallery__col">
-                <div class="gallery__item item1">
-                    <img src="./image/catalog1.jpg" alt="" class="imageCatalog">
-                    <div class="item__content">
-                        <p>A la carta</p>
-                        <p>32 restaurantes</p>
+    
+            <div class="slider__content">
+    
+                <!-- item1 -->
+                <div class="slider__item item1">
+                    <!-- phan tren cua slide -->
+                    <div class="item__top">
+                        <!--phan giam gia tren goc phai  -->
+                        <p class="item__discount">-20%</p>
+                        <!-- phan hinh anh -->
+                        <!-- <img src="./image/slide1.jpg" alt="" class="imageslider"> -->
+                        <!-- noi dung cua hinh -->
+                        <div class="item__content">
+                            <!-- phan tieu de cua 1 item trong slider -->
+                            <p class="item__title">La Pasiva</p>
+                            <p>Buceo | Gastronomía</p>
+                            <!-- phan số  mau do item trong slider -->
+                            <span class="item__number">6</span>
+                            <!-- phan diem  -->
+                            <span class="item__point">Bueno (50 opiniones)</span>
+                        </div>
                     </div>
-
-                </div>
-                <div class="gallery__item item5">
-                    <img src="./image/catalog2.jpg" alt="" class="imageCatalog">
-                    <div class="item__content">
-                        <p>Café y antojos</p>
-                        <p>35 restaurantes</p>
+    
+                    <!-- div chứa phần resrer (footer cua item) -->
+                    <div class="item__reser">
+                        <p>Desde</p>
+                        <span class="reser__cost"> $800</span>
+                        <button class="reser__button">Reservar</button>
                     </div>
-
+    
                 </div>
-            </div>
-            <div class="gallery__col">
-                <div class="gallery__item item2">
-                    <img src="./image/catalog3.jpg" alt="" class="imageCatalog">
-                    <div class="item__content">
-                        <p>Parrilla</p>
-                        <p>25 restaurantes</p>
+    
+                <!-- item 2 -->
+                <div class="slider__item item2">
+                    <div class="item__top">
+                        <p class="item__discount">-20%</p>
+                        <!-- phan hinh anh -->
+                        <!-- <img src="./image/slide2.jpg" alt="" class="imageslider"> -->
+                        <div class="item__content">
+                            <!-- phan tieu de cua 1 item trong slider -->
+                            <p class="item__title">Temaki Sushi</p>
+                            <p>Punta Carretas | Gastronomía</p>
+                            <span class="item__number">10</span>
+                            <span class="item__point">Excelente!!! (1450 opiniones)</span>
+                        </div>
+    
                     </div>
-
-                </div>
-                <div class="gallery__item item6">
-                    <img src="./image/catalog4.jpg" alt="" class="imageCatalog">
-                    <div class="item__content">
-                        <p>Sushi</p>
-                        <p>16 restaurantes</p>
+    
+                    <!-- div chứa phần resrer (footer cua item) -->
+                    <div class="item__reser">
+                        <p>Desde</p>
+                        <span class="reser__cost"> $500</span>
+                        <button class="reser__button">Reservar</button>
                     </div>
-
+    
+    
                 </div>
-
-            </div>
-            <div class="gallery__col">
-                <div class="gallery__item item3">
-                    <img src="./image/catalog5.jpg" alt="" class="imageCatalog">
-                    <div class="item__content">
-                        <p>Buffet</p>
-                        <p>37 restaurantes</p>
+    
+                <!-- item3 -->
+                <div class="slider__item item3">
+                    <div class="item__top">
+                        <!--phan giam gia tren goc phai  -->
+                        <p class="item__discount">-20%</p>
+                        <!-- phan hinh anh -->
+                        <!-- <img src="./image/silde3.jpg" alt="" class="imageslider"> -->
+                        <div class="item__content">
+                            <p class="item__title">Francis</p>
+                            <p>Punta Carretas| Gastronomía</p>
+                            <span class="item__number">8</span>
+                            <span class="item__point">Muy bueno (550 opiniones)</span>
+                        </div>
                     </div>
-
-                </div>
-                <div class="gallery__item item7">
-                    <img src="./image/catalog6.jpg" alt="" class="imageCatalog">
-                    <div class="item__content">
-                        <p>Minutas</p>
-                        <p>16 restaurantes</p>
+    
+                    <!-- div chứa phần resrer (footer cua item) -->
+                    <div class="item__reser">
+                        <p>Desde</p>
+                        <span class="reser__cost"> $1250</span>
+                        <button class="reser__button">Reservar</button>
                     </div>
-
                 </div>
-            </div>
-            <div class="gallery__col">
-                <div class="gallery__item item4">
-                    <img src="./image/catalog7.jpg" alt="" class="imageCatalog">
-                    <div class="item__content">
-                        <p>Confitería y festejos</p>
-                        <p>37 restaurantes</p>
-                    </div>
-
                 </div>
-                <div class="gallery__item item8">
-                    <img src="./image/catalog8.jpg" alt="" class="imageCatalog">
+                <!-- end slider content -->
+    
+        </section>
+        <!-- end slider -->
+    
+        <!-- start menu -->
+        <section class="menu">
+    
+            <!-- menu col1 -->
+            <div class="menu__col">
+                <p class="menu__title">
+                    <img src="./image/fire.png" alt="">
+                    Los más vendidos
+                </p>
+                <div class="menu__item">
                     <div class="item__content">
-                        <p>Tienda</p>
-                        <p>120 restaurantes</p>
-                    </div>
-
-                </div>
-            </div>
-            </div>
-
-    </section>
-    <!-- end catelory -->
-
-    <!-- start slider -->
-    <section class="slider">
-        <div class="slider__header">
-            <p class="title slider__title">¿Donde vamos a comer?</p>
-            <p class="slider__text">Los mejores planes gastronómicos del momento</p>
-        </div>
-
-        <div class="slider__content">
-
-            <!-- item1 -->
-            <div class="slider__item item1">
-                <!-- phan tren cua slide -->
-                <div class="item__top">
-                    <!--phan giam gia tren goc phai  -->
-                    <p class="item__discount">-20%</p>
-                    <!-- phan hinh anh -->
-                    <!-- <img src="./image/slide1.jpg" alt="" class="imageslider"> -->
-                    <!-- noi dung cua hinh -->
-                    <div class="item__content">
-                        <!-- phan tieu de cua 1 item trong slider -->
                         <p class="item__title">La Pasiva</p>
-                        <p>Buceo | Gastronomía</p>
-                        <!-- phan số  mau do item trong slider -->
-                        <span class="item__number">6</span>
-                        <!-- phan diem  -->
-                        <span class="item__point">Bueno (50 opiniones)</span>
-                    </div>
-                </div>
-
-                <!-- div chứa phần resrer (footer cua item) -->
-                <div class="item__reser">
-                    <p>Desde</p>
-                    <span class="reser__cost"> $800</span>
-                    <button class="reser__button">Reservar</button>
-                </div>
-
-            </div>
-
-            <!-- item 2 -->
-            <div class="slider__item item2">
-                <div class="item__top">
-                    <p class="item__discount">-20%</p>
-                    <!-- phan hinh anh -->
-                    <!-- <img src="./image/slide2.jpg" alt="" class="imageslider"> -->
-                    <div class="item__content">
-                        <!-- phan tieu de cua 1 item trong slider -->
-                        <p class="item__title">Temaki Sushi</p>
-                        <p>Punta Carretas | Gastronomía</p>
-                        <span class="item__number">10</span>
-                        <span class="item__point">Excelente!!! (1450 opiniones)</span>
-                    </div>
-
-                </div>
-
-                <!-- div chứa phần resrer (footer cua item) -->
-                <div class="item__reser">
-                    <p>Desde</p>
-                    <span class="reser__cost"> $500</span>
-                    <button class="reser__button">Reservar</button>
-                </div>
-
-
-            </div>
-
-            <!-- item3 -->
-            <div class="slider__item item3">
-                <div class="item__top">
-                    <!--phan giam gia tren goc phai  -->
-                    <p class="item__discount">-20%</p>
-                    <!-- phan hinh anh -->
-                    <!-- <img src="./image/silde3.jpg" alt="" class="imageslider"> -->
-                    <div class="item__content">
-                        <p class="item__title">Francis</p>
-                        <p>Punta Carretas| Gastronomía</p>
+                        <p class="item_decript">Buceo | Gastronomía</p>
                         <span class="item__number">8</span>
                         <span class="item__point">Muy bueno (550 opiniones)</span>
+                        <span class="item__cost">
+                            Desde <b>$890</b>
+                        </span>
                     </div>
                 </div>
-
-                <!-- div chứa phần resrer (footer cua item) -->
-                <div class="item__reser">
-                    <p>Desde</p>
-                    <span class="reser__cost"> $1250</span>
-                    <button class="reser__button">Reservar</button>
+                <div class="menu__item">
+                    <div class="item__content">
+                        <p class="item__title">Temaki Sushi</p>
+                        <p class="item_decript">Pocitos | Gastronomía</p>
+                        <span class="item__number">8</span>
+                        <span class="item__point">Bueno (550 opiniones)</span>
+                        <span class="item__cost">
+                            Desde <b>$500</b>
+                        </span>
+                    </div>
+                </div>
+                <div class="menu__item">
+                    <div class="item__content">
+                        <p class="item__title">Francis</p>
+                        <p class="item_decript">Punta Carretas| Gastronomía</p>
+                        <span class="item__number">8</span>
+                        <span class="item__point">Bueno (550 opiniones)</span>
+                        <span class="item__cost">
+                            Desde <b>$1250</b>
+                        </span>
+                    </div>
+                </div>
+                <div class="menu__item">
+                    <div class="item__content">
+                        <p class="item__title">La casa violeta</p>
+                        <p class="item_decript">Carrasco | Gastronomía</p>
+                        <span class="item__number">8</span>
+                        <span class="item__point">Bueno (50 opiniones)</span>
+                        <span class="item__cost">
+                            Desde <b>$990</b>
+                        </span>
+                    </div>
+                </div>
+                <div class="menu__item">
+                    <div class="item__content">
+                        <p class="item__title">Jhonny Rockets</p>
+                        <p class="item_decript">Centro | Gastronomía</p>
+                        <span class="item__number">10</span>
+                        <span class="item__point">Excelente!!! (1550 opiniones)</span>
+                        <span class="item__cost">
+                            Desde <b>$250</b>
+                        </span>
+                    </div>
                 </div>
             </div>
-            </div>
-            <!-- end slider content -->
-
-    </section>
-    <!-- end slider -->
-
-    <!-- start menu -->
-    <section class="menu">
-
-        <!-- menu col1 -->
-        <div class="menu__col">
-            <p class="menu__title">
-                <img src="./image/fire.png" alt="">
-                Los más vendidos
-            </p>
-            <div class="menu__item">
-                <div class="item__content">
-                    <p class="item__title">La Pasiva</p>
-                    <p class="item_decript">Buceo | Gastronomía</p>
-                    <span class="item__number">8</span>
-                    <span class="item__point">Muy bueno (550 opiniones)</span>
-                    <span class="item__cost">
-                        Desde <b>$890</b>
-                    </span>
+            <!-- end menu col1 -->
+            <!-- menu col2 -->
+            <div class="menu__col">
+                <p class="menu__title">
+                    <img src="./image/star.png" alt="">
+                    Mejor puntuados
+                </p>
+                <div class="menu__item">
+                    <div class="item__content">
+                        <p class="item__title">La Pasiva</p>
+                        <p class="item_decript">Buceo | Gastronomía</p>
+                        <span class="item__number">6</span>
+                        <span class="item__point">Muy bueno (550 opiniones)</span>
+                        <span class="item__cost">
+                            Desde <b>$890</b>
+                        </span>
+                    </div>
+                </div>
+                <div class="menu__item">
+                    <div class="item__content">
+                        <p class="item__title">Temaki Sushi</p>
+                        <p class="item_decript">Pocitos | Gastronomía</p>
+                        <span class="item__number">6</span>
+                        <span class="item__point">Bueno (550 opiniones)</span>
+                        <span class="item__cost">
+                            Desde <b>$500</b>
+                        </span>
+                    </div>
+                </div>
+                <div class="menu__item">
+                    <div class="item__content">
+                        <p class="item__title">Francis</p>
+                        <p class="item_decript">Punta Carretas| Gastronomía</p>
+                        <span class="item__number">8</span>
+                        <span class="item__point">Bueno (550 opiniones)</span>
+                        <span class="item__cost">
+                            Desde <b>$1250</b>
+                        </span>
+                    </div>
+                </div>
+                <div class="menu__item">
+                    <div class="item__content">
+                        <p class="item__title">La casa violeta</p>
+                        <p class="item_decript">Carrasco | Gastronomía</p>
+                        <span class="item__number">6</span>
+                        <span class="item__point">Bueno (50 opiniones)</span>
+                        <span class="item__cost">
+                            Desde <b>$990</b>
+                        </span>
+                    </div>
+                </div>
+                <div class="menu__item">
+                    <div class="item__content">
+                        <p class="item__title">Jhonny Rockets</p>
+                        <p class="item_decript">Centro | Gastronomía</p>
+                        <span class="item__number">10</span>
+                        <span class="item__point">Excelente!!! (1550 opiniones)</span>
+                        <span class="item__cost">
+                            Desde <b>$250</b>
+                        </span>
+                    </div>
                 </div>
             </div>
-            <div class="menu__item">
-                <div class="item__content">
-                    <p class="item__title">Temaki Sushi</p>
-                    <p class="item_decript">Pocitos | Gastronomía</p>
-                    <span class="item__number">8</span>
-                    <span class="item__point">Bueno (550 opiniones)</span>
-                    <span class="item__cost">
-                        Desde <b>$500</b>
-                    </span>
+            <!-- end col2 -->
+    
+    
+            <!-- menu col3 -->
+            <div class="menu__col">
+                <p class="menu__title">
+                    <img src="./image/card.png" alt="">
+                    Mejores descuentos
+                </p>
+                <div class="menu__item">
+                    <div class="item__content">
+                        <p class="item__title">La Pasiva</p>
+                        <p class="item_decript">Buceo | Gastronomía</p>
+                        <span class="item__number">6</span>
+                        <span class="item__point">Muy bueno (550 opiniones)</span>
+                        <span class="item__cost">
+                            Desde <b>$890</b>
+                        </span>
+                    </div>
+                </div>
+                <div class="menu__item">
+                    <div class="item__content">
+                        <p class="item__title">Temaki Sushi</p>
+                        <p class="item_decript">Pocitos | Gastronomía</p>
+                        <span class="item__number">6</span>
+                        <span class="item__point">Bueno (550 opiniones)</span>
+                        <span class="item__cost">
+                            Desde <b>$500</b>
+                        </span>
+                    </div>
+                </div>
+                <div class="menu__item">
+                    <div class="item__content">
+                        <p class="item__title">Francis</p>
+                        <p class="item_decript">Punta Carretas| Gastronomía</p>
+                        <span class="item__number">8</span>
+                        <span class="item__point">Bueno (550 opiniones)</span>
+                        <span class="item__cost">
+                            Desde <b>$1250</b>
+                        </span>
+                    </div>
+                </div>
+                <div class="menu__item">
+                    <div class="item__content">
+                        <p class="item__title">La casa violeta</p>
+                        <p class="item_decript">Carrasco | Gastronomía</p>
+                        <span class="item__number">6</span>
+                        <span class="item__point">Bueno (50 opiniones)</span>
+                        <span class="item__cost">
+                            Desde <b>$990</b>
+                        </span>
+                    </div>
+                </div>
+                <div class="menu__item">
+                    <div class="item__content">
+                        <p class="item__title">Jhonny Rockets</p>
+                        <p class="item_decript">Centro | Gastronomía</p>
+                        <span class="item__number">10</span>
+                        <span class="item__point">Excelente!!! (1550 opiniones)</span>
+                        <span class="item__cost">
+                            Desde <b>$250</b>
+                        </span>
+                    </div>
                 </div>
             </div>
-            <div class="menu__item">
-                <div class="item__content">
-                    <p class="item__title">Francis</p>
-                    <p class="item_decript">Punta Carretas| Gastronomía</p>
-                    <span class="item__number">8</span>
-                    <span class="item__point">Bueno (550 opiniones)</span>
-                    <span class="item__cost">
-                        Desde <b>$1250</b>
-                    </span>
+            <!-- end col2 -->
+        </section>
+        <!-- end menu -->
+        <!-- start registment (màu đỏ phía dưới) -->
+        <section class="registment">
+            <div class="registment__content">
+                <div class="registment__text">
+                    <p>¿Tenés un restaurante?</p>
+                    <p>Probá gratis nuestro sistema de gestión de reservas y clientes ¡y comenzá a sacarle el máximo partido
+                        a tu restaurante!</p>
+                </div>
+                <div class="registment__button">
+                    <button>Probalo gratis!</button>
                 </div>
             </div>
-            <div class="menu__item">
-                <div class="item__content">
-                    <p class="item__title">La casa violeta</p>
-                    <p class="item_decript">Carrasco | Gastronomía</p>
-                    <span class="item__number">8</span>
-                    <span class="item__point">Bueno (50 opiniones)</span>
-                    <span class="item__cost">
-                        Desde <b>$990</b>
-                    </span>
+    
+        </section>
+        <!-- footer -->
+        <section class="footer">
+            <div class="footer__contenttop">
+                <div class="footer__col col1">
+                    <dl class="col__item">
+                        <dt><b>Encontrá lo que buscás!</b></dt>
+                        <dd>Home</dd>
+                        <dd>Restaurantes</dd>
+                        <dd>Estética y bienestar</dd>
+                        <dd>Tiempo libre</dd>
+                        <dd>Travel</dd>
+                        <dd>Shop</dd>
+                    </dl>
+                    <dl class="col__item">
+                        <dt>Sumá tu empresa a woOw!</dt>
+                        <dd>woOw! te puede llevar cientos de consumidores a tu puerta</dd>
+                        <dd>
+                            Contactanos aquí
+                        </dd>
+                    </dl>
+                    <dl class="col__item">
+                        <dt>Compras mayoristas</dt>
+                        <dd>Ventas al por mayor. Si sos mayorista o estás interesado en comprar grandes cantidades
+                            escribenos a mayoristas@woow.com.uy
+                        </dd>
+                    </dl>
+                </div>
+                <div class="footer__col col2">
+                    <dl class="col__item">
+                        <dt>Sobre Nosotros</dt>
+                        <dd>¿Qué es woOw!?</dd>
+                        <dd>Trabaja con nosotros</dd>
+                        <dd>Términos y Condiciones (generales)</dd>
+                        <dd>Política de Privacidad</dd>
+                        <dd>Contacto</dd>
+                        <dd>Sugerencias</dd>
+                        <dd>woOw! Acerca</dd>
+                    </dl>
+                    <dl class="col__item">
+                        <dt>Contacto:</dt>
+                        <dd>
+                            <i class="fa fa-envelope-square"></i> info@woow.com.uy
+                        </dd>
+                        <dd>
+                            <i class="fa fa-phone-square"></i> (+598) 2408 5555
+                        </dd>
+                        <dd>Marco Bruto 1373 esq. Rivera</dd>
+                        <br/>
+    
+                        <dd><i class="fas fa-clock"></i><strong> Atención telefónica:</strong><br/>
+                            Lunes a Viernes de 9 a 18hs y Sábados de 10 a 15hs.</dd>
+                        <br/>
+                        <dd>
+                            <i class="fas fa-clock"></i>
+                            <strong> Retiro de productos:</strong>
+                            <br>Lunes a Viernes de 9a 20hs y Sábados de 10 a 15hs.
+                        </dd>
+                        <br/>
+                        <dd>Envianos tu consulta</dd>
+                    </dl>
+                </div>
+                <div class="footer__col col3">
+                    <dl class="col__item">
+                        <dt>Comprá con tranquilidad</dt>
+                        <dd>woOw! es el 1er sitio de compras online de Uruguay que te permite obtener grandes descuentos.
+                        </dd><br>
+                        <dd>
+                            <label>¿Cómo funciona woOw!?</label>
+                        </dd>
+                        <dd><i class="fa fa-question-circle"></i> Preguntas Frecuentes</dd>
+                    </dl>
+                    <img src="./image/footer.png" alt="">
                 </div>
             </div>
-            <div class="menu__item">
-                <div class="item__content">
-                    <p class="item__title">Jhonny Rockets</p>
-                    <p class="item_decript">Centro | Gastronomía</p>
-                    <span class="item__number">10</span>
-                    <span class="item__point">Excelente!!! (1550 opiniones)</span>
-                    <span class="item__cost">
-                        Desde <b>$250</b>
-                    </span>
+            <div class="footer__contentbot">
+                <h3 class="footer__title">Comunicate con nosotros:</h3>
+                <div class="social__icons">
+                    <i class="fa fa-facebook-square"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-google-plus-square"></i>
                 </div>
-            </div>
-        </div>
-        <!-- end menu col1 -->
-        <!-- menu col2 -->
-        <div class="menu__col">
-            <p class="menu__title">
-                <img src="./image/star.png" alt="">
-                Mejor puntuados
-            </p>
-            <div class="menu__item">
-                <div class="item__content">
-                    <p class="item__title">La Pasiva</p>
-                    <p class="item_decript">Buceo | Gastronomía</p>
-                    <span class="item__number">6</span>
-                    <span class="item__point">Muy bueno (550 opiniones)</span>
-                    <span class="item__cost">
-                        Desde <b>$890</b>
-                    </span>
+                <h3 class="footer__title">Tu compra segura con:</h3>
+                <div>
+                    <ul class="paycard">
+                        <li><img alt="VISA" src="https://cdn.woow.com.uy/public/4_0/img/footer/logo-visa.png"></li>
+                        <li><img alt="MasterCard"
+                                src="https://cdn.woow.com.uy/public/4_0/img/footer/logo-mastercard-white.png"></li>
+                        <li><img alt="Brou" src="https://cdn.woow.com.uy/public/4_0/img/footer/logo-ebrou.png"></li>
+                        <li><img alt="OCA" src="https://cdn.woow.com.uy/public/4_0/img/footer/logo-oca.png"></li>
+                        <li><img alt="Santander" src="https://cdn.woow.com.uy/public/4_0/img/footer/logo-santander.png"></li>
+                        <li><img alt="Cabal" src="https://cdn.woow.com.uy/public/4_0/img/footer/logo-cabal.png"></li>
+                        <li><img alt="Abitab" src="https://cdn.woow.com.uy/public/4_0/img/footer/logo-abitab.png"></li>
+                        <li><img alt="BBVA" src="https://cdn.woow.com.uy/public/4_0/img/footer/logo-bbva.png"></li>
+                        <li><img alt="Lider" src="https://cdn.woow.com.uy/public/4_0/img/footer/logo-lider.png"></li>
+                        <li><img alt="Italcred" src="https://cdn.woow.com.uy/public/4_0/img/footer/logo-italcred.png"></li>
+                        <li><img alt="PassCard" src="https://cdn.woow.com.uy/public/4_0/img/footer/logo-passcard.png"></li>
+                    </ul>
+                    <h4 class="footer_dac">Envíos a todo el país: <img alt="DAC" class="dac"
+                            src="https://cdn.woow.com.uy/public/4_0/img/footer/logo-dac.png"></h4>
                 </div>
-            </div>
-            <div class="menu__item">
-                <div class="item__content">
-                    <p class="item__title">Temaki Sushi</p>
-                    <p class="item_decript">Pocitos | Gastronomía</p>
-                    <span class="item__number">6</span>
-                    <span class="item__point">Bueno (550 opiniones)</span>
-                    <span class="item__cost">
-                        Desde <b>$500</b>
-                    </span>
+                <div class="footer__logo">
+                    <img src="https://cdn.woow.com.uy/public/4_0/img/logo-woow-2017.svg" alt="logo">
+                    <p class="copyright">© 2017 woOw! Derechos Reservados</p>
                 </div>
+    
+    
             </div>
-            <div class="menu__item">
-                <div class="item__content">
-                    <p class="item__title">Francis</p>
-                    <p class="item_decript">Punta Carretas| Gastronomía</p>
-                    <span class="item__number">8</span>
-                    <span class="item__point">Bueno (550 opiniones)</span>
-                    <span class="item__cost">
-                        Desde <b>$1250</b>
-                    </span>
-                </div>
-            </div>
-            <div class="menu__item">
-                <div class="item__content">
-                    <p class="item__title">La casa violeta</p>
-                    <p class="item_decript">Carrasco | Gastronomía</p>
-                    <span class="item__number">6</span>
-                    <span class="item__point">Bueno (50 opiniones)</span>
-                    <span class="item__cost">
-                        Desde <b>$990</b>
-                    </span>
-                </div>
-            </div>
-            <div class="menu__item">
-                <div class="item__content">
-                    <p class="item__title">Jhonny Rockets</p>
-                    <p class="item_decript">Centro | Gastronomía</p>
-                    <span class="item__number">10</span>
-                    <span class="item__point">Excelente!!! (1550 opiniones)</span>
-                    <span class="item__cost">
-                        Desde <b>$250</b>
-                    </span>
-                </div>
-            </div>
-        </div>
-        <!-- end col2 -->
-
-
-        <!-- menu col3 -->
-        <div class="menu__col">
-            <p class="menu__title">
-                <img src="./image/card.png" alt="">
-                Mejores descuentos
-            </p>
-            <div class="menu__item">
-                <div class="item__content">
-                    <p class="item__title">La Pasiva</p>
-                    <p class="item_decript">Buceo | Gastronomía</p>
-                    <span class="item__number">6</span>
-                    <span class="item__point">Muy bueno (550 opiniones)</span>
-                    <span class="item__cost">
-                        Desde <b>$890</b>
-                    </span>
-                </div>
-            </div>
-            <div class="menu__item">
-                <div class="item__content">
-                    <p class="item__title">Temaki Sushi</p>
-                    <p class="item_decript">Pocitos | Gastronomía</p>
-                    <span class="item__number">6</span>
-                    <span class="item__point">Bueno (550 opiniones)</span>
-                    <span class="item__cost">
-                        Desde <b>$500</b>
-                    </span>
-                </div>
-            </div>
-            <div class="menu__item">
-                <div class="item__content">
-                    <p class="item__title">Francis</p>
-                    <p class="item_decript">Punta Carretas| Gastronomía</p>
-                    <span class="item__number">8</span>
-                    <span class="item__point">Bueno (550 opiniones)</span>
-                    <span class="item__cost">
-                        Desde <b>$1250</b>
-                    </span>
-                </div>
-            </div>
-            <div class="menu__item">
-                <div class="item__content">
-                    <p class="item__title">La casa violeta</p>
-                    <p class="item_decript">Carrasco | Gastronomía</p>
-                    <span class="item__number">6</span>
-                    <span class="item__point">Bueno (50 opiniones)</span>
-                    <span class="item__cost">
-                        Desde <b>$990</b>
-                    </span>
-                </div>
-            </div>
-            <div class="menu__item">
-                <div class="item__content">
-                    <p class="item__title">Jhonny Rockets</p>
-                    <p class="item_decript">Centro | Gastronomía</p>
-                    <span class="item__number">10</span>
-                    <span class="item__point">Excelente!!! (1550 opiniones)</span>
-                    <span class="item__cost">
-                        Desde <b>$250</b>
-                    </span>
-                </div>
-            </div>
-        </div>
-        <!-- end col2 -->
-    </section>
-    <!-- end menu -->
-    <!-- start registment (màu đỏ phía dưới) -->
-    <section class="registment">
-        <div class="registment__content">
-            <div class="registment__text">
-                <p>¿Tenés un restaurante?</p>
-                <p>Probá gratis nuestro sistema de gestión de reservas y clientes ¡y comenzá a sacarle el máximo partido
-                    a tu restaurante!</p>
-            </div>
-            <div class="registment__button">
-                <button>Probalo gratis!</button>
-            </div>
-        </div>
-
-    </section>
-    <!-- footer -->
-    <section class="footer">
-        <div class="footer__contenttop">
-            <div class="footer__col col1">
-                <dl class="col__item">
-                    <dt><b>Encontrá lo que buscás!</b></dt>
-                    <dd>Home</dd>
-                    <dd>Restaurantes</dd>
-                    <dd>Estética y bienestar</dd>
-                    <dd>Tiempo libre</dd>
-                    <dd>Travel</dd>
-                    <dd>Shop</dd>
-                </dl>
-                <dl class="col__item">
-                    <dt>Sumá tu empresa a woOw!</dt>
-                    <dd>woOw! te puede llevar cientos de consumidores a tu puerta</dd>
-                    <dd>
-                        Contactanos aquí
-                    </dd>
-                </dl>
-                <dl class="col__item">
-                    <dt>Compras mayoristas</dt>
-                    <dd>Ventas al por mayor. Si sos mayorista o estás interesado en comprar grandes cantidades
-                        escribenos a mayoristas@woow.com.uy
-                    </dd>
-                </dl>
-            </div>
-            <div class="footer__col col2">
-                <dl class="col__item">
-                    <dt>Sobre Nosotros</dt>
-                    <dd>¿Qué es woOw!?</dd>
-                    <dd>Trabaja con nosotros</dd>
-                    <dd>Términos y Condiciones (generales)</dd>
-                    <dd>Política de Privacidad</dd>
-                    <dd>Contacto</dd>
-                    <dd>Sugerencias</dd>
-                    <dd>woOw! Acerca</dd>
-                </dl>
-                <dl class="col__item">
-                    <dt>Contacto:</dt>
-                    <dd>
-                        <i class="fa fa-envelope-square"></i> info@woow.com.uy
-                    </dd>
-                    <dd>
-                        <i class="fa fa-phone-square"></i> (+598) 2408 5555
-                    </dd>
-                    <dd>Marco Bruto 1373 esq. Rivera</dd>
-                    <br/>
-
-                    <dd><i class="fas fa-clock"></i><strong> Atención telefónica:</strong><br/>
-                        Lunes a Viernes de 9 a 18hs y Sábados de 10 a 15hs.</dd>
-                    <br/>
-                    <dd>
-                        <i class="fas fa-clock"></i>
-                        <strong> Retiro de productos:</strong>
-                        <br>Lunes a Viernes de 9a 20hs y Sábados de 10 a 15hs.
-                    </dd>
-                    <br/>
-                    <dd>Envianos tu consulta</dd>
-                </dl>
-            </div>
-            <div class="footer__col col3">
-                <dl class="col__item">
-                    <dt>Comprá con tranquilidad</dt>
-                    <dd>woOw! es el 1er sitio de compras online de Uruguay que te permite obtener grandes descuentos.
-                    </dd><br>
-                    <dd>
-                        <label>¿Cómo funciona woOw!?</label>
-                    </dd>
-                    <dd><i class="fa fa-question-circle"></i> Preguntas Frecuentes</dd>
-                </dl>
-                <img src="./image/footer.png" alt="">
-            </div>
-        </div>
-        <div class="footer__contentbot">
-            <h3 class="footer__title">Comunicate con nosotros:</h3>
-            <div class="social__icons">
-                <i class="fa fa-facebook-square"></i>
-                <i class="fa fa-twitter"></i>
-                <i class="fa fa-instagram"></i>
-                <i class="fa fa-google-plus-square"></i>
-            </div>
-            <h3 class="footer__title">Tu compra segura con:</h3>
-            <div>
-                <ul class="paycard">
-                    <li><img alt="VISA" src="https://cdn.woow.com.uy/public/4_0/img/footer/logo-visa.png"></li>
-                    <li><img alt="MasterCard"
-                            src="https://cdn.woow.com.uy/public/4_0/img/footer/logo-mastercard-white.png"></li>
-                    <li><img alt="Brou" src="https://cdn.woow.com.uy/public/4_0/img/footer/logo-ebrou.png"></li>
-                    <li><img alt="OCA" src="https://cdn.woow.com.uy/public/4_0/img/footer/logo-oca.png"></li>
-                    <li><img alt="Santander" src="https://cdn.woow.com.uy/public/4_0/img/footer/logo-santander.png"></li>
-                    <li><img alt="Cabal" src="https://cdn.woow.com.uy/public/4_0/img/footer/logo-cabal.png"></li>
-                    <li><img alt="Abitab" src="https://cdn.woow.com.uy/public/4_0/img/footer/logo-abitab.png"></li>
-                    <li><img alt="BBVA" src="https://cdn.woow.com.uy/public/4_0/img/footer/logo-bbva.png"></li>
-                    <li><img alt="Lider" src="https://cdn.woow.com.uy/public/4_0/img/footer/logo-lider.png"></li>
-                    <li><img alt="Italcred" src="https://cdn.woow.com.uy/public/4_0/img/footer/logo-italcred.png"></li>
-                    <li><img alt="PassCard" src="https://cdn.woow.com.uy/public/4_0/img/footer/logo-passcard.png"></li>
-                </ul>
-                <h4 class="footer_dac">Envíos a todo el país: <img alt="DAC" class="dac"
-                        src="https://cdn.woow.com.uy/public/4_0/img/footer/logo-dac.png"></h4>
-            </div>
-            <div class="footer__logo">
-                <img src="https://cdn.woow.com.uy/public/4_0/img/logo-woow-2017.svg" alt="logo">
-                <p class="copyright">© 2017 woOw! Derechos Reservados</p>
-            </div>
-
-
-        </div>
-        <br>
-        <br><br>
-    </section>
+            <br>
+            <br><br>
+        </section>
+    </div>
+   
 
 </body>
 
