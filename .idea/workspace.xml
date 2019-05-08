@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1634a9db-a740-47e2-bb68-6aafdc6c4d2c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css" afterDir="false" />
     </list>
@@ -18,8 +19,15 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="202">
-                  <caret line="560" column="33" lean-forward="true" selection-start-line="560" selection-start-column="33" selection-end-line="560" selection-end-column="33" />
+                <state relative-caret-position="56">
+                  <caret line="592" column="31" lean-forward="true" selection-start-line="592" selection-start-column="31" selection-end-line="592" selection-end-column="31" />
+                  <folding>
+                    <element signature="e#1640#1646#0" expanded="true" />
+                    <element signature="e#1738#1744#0" expanded="true" />
+                    <element signature="e#2463#2469#0" expanded="true" />
+                    <element signature="e#2554#2560#0" expanded="true" />
+                    <element signature="e#2648#2654#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -31,8 +39,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/style/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="780" column="16" selection-start-line="780" selection-start-column="16" selection-end-line="780" selection-end-column="16" />
+                <state relative-caret-position="151">
+                  <caret line="1622" column="40" selection-start-line="1622" selection-start-column="40" selection-end-line="1622" selection-end-column="40" />
                 </state>
               </provider>
             </entry>
@@ -54,7 +62,15 @@
       <find>footer</find>
       <find>.header__content</find>
       <find>1366px</find>
+      <find>shadow</find>
+      <find>700px</find>
+      <find>1435px</find>
+      <find>item__content</find>
+      <find>1600px</find>
     </findStrings>
+    <replaceStrings>
+      <replace>1280px</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -67,7 +83,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="15" />
     <option name="y" value="20" />
     <option name="width" value="1750" />
@@ -115,12 +131,14 @@
       <updated>1556091320568</updated>
       <workItem from="1556091322301" duration="1953000" />
       <workItem from="1556702891038" duration="2609000" />
-      <workItem from="1556759091728" duration="12280000" />
+      <workItem from="1556759091728" duration="13981000" />
+      <workItem from="1557122756023" duration="15851000" />
+      <workItem from="1557277838450" duration="13827000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16842000" />
+    <option name="totallyTimeSpent" value="48221000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -130,7 +148,7 @@
       <window_info id="Structure" order="1" sideWeight="0.50141644" side_tool="true" weight="0.25302014" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -153,15 +171,22 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="560" column="33" lean-forward="true" selection-start-line="560" selection-start-column="33" selection-end-line="560" selection-end-column="33" />
+        <state relative-caret-position="56">
+          <caret line="592" column="31" lean-forward="true" selection-start-line="592" selection-start-column="31" selection-end-line="592" selection-end-column="31" />
+          <folding>
+            <element signature="e#1640#1646#0" expanded="true" />
+            <element signature="e#1738#1744#0" expanded="true" />
+            <element signature="e#2463#2469#0" expanded="true" />
+            <element signature="e#2554#2560#0" expanded="true" />
+            <element signature="e#2648#2654#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/style/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="780" column="16" selection-start-line="780" selection-start-column="16" selection-end-line="780" selection-end-column="16" />
+        <state relative-caret-position="151">
+          <caret line="1622" column="40" selection-start-line="1622" selection-start-column="40" selection-end-line="1622" selection-end-column="40" />
         </state>
       </provider>
     </entry>
