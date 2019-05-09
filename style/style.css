@@ -79,34 +79,103 @@ header, section, footer, aside, nav, main, article, figure {
       top: 10px;
       font-size: 25px;
     }
-@media screen and ( min-width: 765px ){
+
+@media screen and ( min-width: 320px ){
+
+}
+
+@media screen and ( min-width: 480px ){
   .header{
-    height: 50px;
+    height: 40px;
   }
   .header__content{
     top: 10px;
-    width: 700px;
+    width: 430px;
+    height: 25px;
   }
   .header__input{
-    width: 300px;
+    width: 250px;
     height: 20px;
   }
   .header__search{
-    width:70px;
+    width:40px;
     height: 20px;
   }
   .header__logo img{
     width: 40px;
     top: 3px;
+    margin:0 20px 0 10px;
+
   }
   .header__icon{
-    top: 5px;
+    top: 0px;
     font-size: 15px;
   }
 }
-@media screen and ( min-width: 1024px ){
+@media screen and ( min-width: 540px ){
+  .header{
+    height: 40px;
+  }
+  .header__content{
+    width: 480px;
+  }
+}
+@media screen and ( min-width: 640px ){
+  .header{
+    height: 40px;
+  }
   .header__content{
     top: 10px;
+    width: 550px;
+    height: 25px;
+  }
+  .header__input{
+    width: 320px;
+    height: 20px;
+  }
+  .header__search{
+    width:40px;
+    height: 20px;
+  }
+  .header__logo img{
+    width: 40px;
+    top: 3px;
+    margin:0 20px 0 10px;
+
+  }
+  .header__icon{
+    top: 0px;
+    font-size: 15px;
+  }
+}
+@media screen and ( min-width: 720px ){
+  .header__content{
+    width: 650px;
+  }
+}
+@media screen and ( min-width: 768px ){
+  .header{
+    height: 50px;
+  }
+  .header__content{
+    top: 15px;
+    width: 690px;
+  }
+  .header__input{
+    width: 350px;
+  }
+  .header__search{
+    width:50px;
+  }
+  .header__icon{
+    top: 5px;
+  }
+}
+@media screen and ( min-width: 1024px ){
+  .header{
+    height: 60px;
+  }
+  .header__content{
     width: 850px;
   }
   .header__input{
@@ -120,6 +189,7 @@ header, section, footer, aside, nav, main, article, figure {
   .header__logo img{
     width: 50px;
     top: 5px;
+    margin:0 30px 0 10px;
   }
   .header__icon{
     top: 5px;
@@ -134,6 +204,7 @@ header, section, footer, aside, nav, main, article, figure {
     }
     .header__content{
       width: 1000px;
+      top: 10px;
     }
     .header__input{
       width: 400px;
@@ -148,53 +219,61 @@ header, section, footer, aside, nav, main, article, figure {
   }
     @media screen and ( min-width: 1280px ){
       .header__content{
-        width: 1000px;
+
+        width: 1050px;
       }
       .header__input{
-        width: 400px;
+        width: 450px;
       }
     }
     @media screen and ( min-width: 1366px ){
         .header__content{
-          width: 1065px;
+          width: 1100px;
         }
         .header__input{
           width: 500px;
+          height: 30px;
+        }
+        .header__search{
+          height: 30px;
         }
       }
     @media screen and ( min-width: 1535px ){
       .header__content{
-        width: 1140px;
+        width: 1250px;
       }
       .header__input{
         width: 600px;
-        height: 30px;
       }
       .header__search{
         width:80px;
-        height: 30px;
+      }
+      .title{
+        font-size: 22px;
       }
     }
     @media screen and ( min-width: 1680px ){
+      .header{
+        height: 70px;
+      }
           .header__content{
             width: 1350px;
           }
         }
     @media screen and ( min-width: 1920px ){
       .header__content{
-        width: 1440px;
+        width: 1640px;
       }
       .header__input{
          width: 700px;
       }
     }
-
-
   /* navbar ---------------*/
 .navbar {
     /* max-width: 1544px; */
     height: 35px;
     background-color: #8a1322;
+    z-index: 2;
 }
 .navbar__ul{
     display: flex;
@@ -250,10 +329,93 @@ header, section, footer, aside, nav, main, article, figure {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-@media screen and ( min-width: 765px ){
+@media screen and ( min-width: 480px ){
+  .navbar {
+    height: 20px;
+  }
+  .navbar__ul{
+    width: 480px;
+    line-height: 15px;
+  }
+  .navbar__li{
+    min-width: 40px;
+    font-size: 6px;
+
+  }
+  .dropdown-content{
+    top: 20px;
+    min-width: 60px;
+  }
+  .dropdown-content a{
+    padding: 0px 2px;
+  }
+}
+@media screen and ( min-width: 540px ){
+  .navbar {
+    height: 20px;
+  }
+  .navbar__ul{
+    width: 500px;
+    line-height: 20px;
+  }
+  .navbar__li{
+    min-width: 40px;
+    font-size: 6px;
+    padding: 0 5px;
+  }
+  .dropdown-content{
+    top: 20px;
+    min-width: 80px;
+  }
+  .dropdown-content a{
+    padding: 0px 2px;
+  }
+}
+
+@media screen and ( min-width: 640px ){
+  .navbar {
+    height: 20px;
+  }
+  .navbar__ul{
+    width: 600px;
+    line-height: 20px;
+  }
+  .navbar__li{
+    min-width: 45px;
+    font-size: 6px;
+    padding: 0 5px;
+  }
+  .dropdown-content{
+    top: 25px;
+    min-width: 100px;
+  }
+  .dropdown-content a{
+    padding: 0px 2px;
+  }
+}
+@media screen and ( min-width: 720px ){
   .navbar {
     height: 25px;
   }
+  .navbar__ul{
+    width: 690px;
+    line-height: 25px;
+  }
+  .navbar__li{
+    min-width: 45px;
+    font-size: 8px;
+    padding: 0 5px;
+  }
+  .dropdown-content{
+    top: 25px;
+    min-width: 100px;
+  }
+  .dropdown-content a{
+    padding: 0px 2px;
+  }
+}
+
+@media screen and ( min-width: 768px ){
   .navbar__ul{
     width: 700px;
     line-height: 25px;
@@ -285,7 +447,7 @@ header, section, footer, aside, nav, main, article, figure {
   }
   .dropdown-content{
     top: 30px;
-    min-width: 150px;
+    min-width: 155px;
   }
   .dropdown-content a{
     padding: 5px 3px;
@@ -293,32 +455,49 @@ header, section, footer, aside, nav, main, article, figure {
 
 
 }
-@media screen and ( min-width: 1280px ){
+@media screen and ( min-width: 1200px ){
   .navbar__ul{
-    width: 1000px;
-    line-height: 30px;
+    width: 1050px;
   }
   .navbar__li{
-    min-width: 65px;
-    font-size: 10px;
+    min-width: 70px;
+    font-size: 11px;
+  }
+}
+
+@media screen and ( min-width: 1280px ){
+  .navbar__ul{
+    width: 1100px;
+    /*height: 30px;*/
+  }
+  .navbar__li{
+    /*min-width: px;*/
+    font-size: 12px;
   }
 }
 
 @media screen and ( min-width: 1366px ){
+  .navbar{
+    height: 35px;
+  }
   .navbar__ul{
-    width: 1100px;
+    width: 1200px;
+    line-height: 35px;
   }
   .navbar__li{
     min-width: 72px;
     font-size: 12px;
   }
+  .dropdown-content{
+    top: 35px;
+  }
 }
 @media screen and ( min-width: 1535px ){
   .navbar__ul{
-    width: 1200px;
+    width: 1350px;
   }
   .navbar__li{
-    min-width: 70px;
+    min-width: 90px;
     font-size: 13px;
   }
 }
@@ -332,7 +511,7 @@ header, section, footer, aside, nav, main, article, figure {
 }
 @media screen and ( min-width: 1920px ){
   .navbar__ul{
-    width: 1500px;
+    width: 1700px;
   }
   .navbar__li{
     min-width: 110px;
@@ -422,20 +601,99 @@ header, section, footer, aside, nav, main, article, figure {
  
 }
 .banner__button a{
+
+  font-weight: 300;
   color: rgb(255, 255, 255);
 }
+@media screen and ( min-width: 480px ){
+  .banner{
+    height: 140px;
+  }
+  .banner__content {
+    width: 350px;
+  }
+  .banner__input{
+    width: 100px;
+    height: 20px;
+  }
+  .banner__title{
+    font-size: 15px;
+  }
+  .banner__text , .banner__label{
+    font-size: 6px;
+  }
+  .banner__bar{
+    margin-top: 5px;
+  }
+  .banner__input .select{
+    height: 20px;
+    font-size: 6px;
+    padding: 0px 0px;
+  }
+  .banner__input:last-child {
+    width: 60px;
+  }
+}
+@media screen and ( min-width: 540px ){
+  .banner{
+    height: 170px;
+  }
+  .banner__content {
+    width: 415px;
+  }
+  .banner__input{
+    width: 130px;
+  }
+  .banner__title{
+    font-size: 20px;
+  }
+  .banner__text , .banner__label{
+    font-size: 8px;
+  }
+  .banner__bar{
+    margin-top: 10px;
+  }
+  .banner__input .select{
+    font-size: 9px;
+  }
+  .banner__input:last-child {
+    width: 80px;
 
+  }
+}
+@media screen and ( min-width: 640px ){
+  .banner__content {
+    width: 420px;
+  }
+  .banner__text , .banner__label{
+    font-size: 8px;
+  }
+  .banner__input .select{
+    font-size: 8px;
+  }
+  .banner__input:last-child {
+    width: 80px;
 
-@media screen and ( min-width: 765px ){
+  }
+
+}
+@media screen and ( min-width: 720px ){
+  .banner__content {
+    width: 450px;
+  }
+
+  .banner__input .select{
+    font-size: 9px;
+  }
+
+}
+
+@media screen and ( min-width: 768px ){
   .banner{
     height: 200px;
   }
   .banner__content {
     width: 520px;
-  }
-  .banner__input{
-    width: 130px;
-    height: 20px;
   }
   .banner__title{
     font-size: 20px;
@@ -447,20 +705,18 @@ header, section, footer, aside, nav, main, article, figure {
     margin-top: 15px;
   }
   .banner__input .select{
-    height: 20px;
-    font-size: 9px;
-    padding: 0px 0px;
-  }
-  .banner__input:last-child {
-    width: 80px;
-
+    height: 25px;
   }
 
 }
-
-@media screen and ( min-width: 1280px ){
-  .banner{
-    height: 400px;
+@media screen and ( min-width: 1024px ) {
+  .banner {
+    height: 280px;
+  }
+}
+@media screen and ( min-width: 1200px ) {
+  .banner {
+    height: 320px;
   }
   .banner__content {
     width: 730px;
@@ -488,6 +744,40 @@ header, section, footer, aside, nav, main, article, figure {
 
   }
 }
+@media screen and ( min-width: 1280px ){
+  .banner{
+    height: 380px;
+  }
+  .banner__content {
+    width: 730px;
+  }
+  .banner__title{
+    font-size: 30px;
+    padding-bottom: 5px;
+  }
+  .banner__text{
+    font-size: 14px;
+  }
+  .banner__bar{
+    margin-top: 30px;
+  }
+  .banner__input{
+    width: 180px;
+  }
+  .banner__text , .banner__label{
+    font-size: 14px;
+  }
+  .banner__input .select{
+    height: 35px;
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+  .banner__input:last-child {
+    width: 120px;
+
+  }
+}
+
 
 @media screen and ( min-width: 1535px ){
   .banner__content {
@@ -587,30 +877,31 @@ header, section, footer, aside, nav, main, article, figure {
   font-size: 12px;
   font-weight: 300;
 }
-@media screen and ( min-width: 765px ){
+@media screen and ( min-width: 480px ){
   .title{
-    font-size: 18px;
+    font-size: 13px;
   }
   .gallery{
-    margin: 30px auto;
+    margin: 20px auto;
   }
   .gallery__content {
-    width:600px;
+    width:450px;
   }
   .gallery__col{
-    width: 145px;
+    width: 110px;
   }
   .gallery__title{
-    font-size: 18px;
+    font-size: 15px;
+    padding-bottom: 10px;
   }
   .gallery__item{
-    margin-bottom: 5px;
+    margin-bottom: 2px;
   }
   .gallery__item .item__content p:first-child {
-    font-size: 12px;
+    font-size: 8px;
   }
   .gallery__item .item__content p:last-child{
-    font-size: 8px;
+    font-size: 6px;
   }
   .gallery__item .item__content{
     bottom: 5px;
@@ -618,23 +909,102 @@ header, section, footer, aside, nav, main, article, figure {
 
 
 }
+@media screen and ( min-width: 540px ){
+  .gallery{
+    margin: 30px auto;
+  }
+  .gallery__content {
+    width:480px;
+  }
+  .gallery__col{
+    width: 115px;
+  }
+  .gallery__title{
+    font-size: 18px;
+  }
+  .gallery__item{
+    margin-bottom: 5px;
+  }
+
+}
+@media screen and ( min-width: 640px ){
+  .gallery{
+    margin: 30px auto;
+  }
+  .gallery__content {
+    width:550px;
+  }
+  .gallery__col{
+    width: 133px;
+  }
+  .gallery__title{
+    font-size: 14px;
+  }
+  .gallery__item{
+    margin-bottom: 5px;
+  }
+  .gallery__item .item__content p:first-child {
+    font-size: 11px;
+  }
+  .gallery__item .item__content p:last-child{
+    font-size: 8px;
+  }
+}
+@media screen and ( min-width: 720px ){
+
+  .gallery__content {
+    width:640px;
+  }
+  .gallery__col{
+    width: 155px;
+  }
+
+}
+@media screen and ( min-width: 768px ){
+  .title{
+    font-size: 15px;
+  }
+  .gallery{
+    margin: 30px auto;
+  }
+  .gallery__content {
+    width:640px;
+  }
+}
 @media screen and ( min-width: 1024px ){
+  .gallery{
+    margin: 40px auto;
+  }
+  .gallery__title{
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
   .gallery__content {
     width:800px;
   }
   .gallery__col{
     width: 195px;
   }
+  .gallery__item .item__content p:first-child {
+    font-size: 14px;
+  }
+  .gallery__item .item__content p:last-child{
+    font-size: 10px;
+  }
+  .gallery__item .item__content{
+    bottom: 8px;
+  }
 }
 
-
-
-@media screen and ( min-width: 1280px ){
+@media screen and ( min-width: 1200px ){
   .gallery__content {
     width:1000px;
   }
   .gallery__col{
     width: 242px;
+  }
+  .gallery__title{
+    font-size: 18px;
   }
   .gallery__item{
     margin-bottom: 8px;
@@ -646,8 +1016,8 @@ header, section, footer, aside, nav, main, article, figure {
     font-size: 12px;
   }
   .gallery__item .item__content{
-    bottom: 8px;
-  }
+     bottom: 8px;
+   }
 }
 
 @media screen and ( min-width: 1366px ){
@@ -656,6 +1026,9 @@ header, section, footer, aside, nav, main, article, figure {
   }
   .gallery__col{
     width: 265px;
+  }
+  .gallery__item .item__content{
+    bottom: 15px;
   }
 }
 @media screen and ( min-width: 1535px ){
@@ -675,6 +1048,7 @@ header, section, footer, aside, nav, main, article, figure {
   .gallery__item .item__content p:last-child{
     font-size: 12px;
   }
+
 }
 @media screen and ( min-width: 1680px ){
   .gallery__content {
@@ -683,6 +1057,13 @@ header, section, footer, aside, nav, main, article, figure {
   .gallery__col{
     width: 360px;
   }
+  .gallery__item .item__content p:first-child{
+    font-size: 24px;
+  }
+  .gallery__item .item__content p:last-child{
+    font-size: 15px;
+  }
+
 }
 @media screen and ( min-width: 1920px ){
   .gallery{
@@ -699,8 +1080,6 @@ header, section, footer, aside, nav, main, article, figure {
     padding-bottom: 40px;
   }
 }
-
-
 
 /* end gallery */
 
@@ -816,30 +1195,31 @@ header, section, footer, aside, nav, main, article, figure {
   font-size: 30px;
   font-weight: 600;
 }
-
-@media screen and ( min-width: 765px ){
+@media screen and ( min-width: 480px ){
   .slider__content {
-    width:600px;
-    line-height: 15px;
+    width:460px;
+    line-height: 12px;
   }
   .slider__item{
-    width: 190px;
+    width: 140px;
   }
   .slider__item .item__top{
     width: 100%;
-    height: 150px;
+    height: 100px;
   }
-  /* title and text at head of slide */
+  .slider__header{
+    padding-bottom: 13px;
+  }
   .slider__text{
-    font-size: 14px;
+    font-size: 10px;
   }
   /* set vi tri cua phan noi dung hinh anh */
   .slider__item .item__content{
-    bottom: 10px;
-    left: 15px;
+    bottom: 7px;
+    left: 5px;
   }
   .slider__item a{
-    font-size: 10px;
+    font-size: 8px;
   }
   /* set phan title trong slide */
   .slider__item .item__title{
@@ -866,28 +1246,68 @@ header, section, footer, aside, nav, main, article, figure {
 
   /* phần footer (reser) của slider */
   .slider__item .item__reser{
-    padding: 5px 15px 15px 15px;
-    line-height: 28px;
+    padding: 2px 5px 5px 2px;
+    line-height: 20px;
   }
   .slider__item .reser__button{
-    width: 130px;
-    height: 30px;
-    border-radius: 4px;
+    width: 60px;
+    height: 20px;
+  }
+  .slider__item .reser__cost{
+    font-size: 18px;
+  }
+  .slider__item .item__reser p {
+    font-size: 12px;
+  }
 
+}
+@media screen and ( min-width: 540px ){
+  .slider__content {
+    width:480px;
+    line-height: 15px;
+  }
+  .slider__item{
+    width: 150px;
+  }
+
+}
+@media screen and ( min-width: 640px ){
+  .title{
+    font-size: 18px;
+  }
+  .slider__content {
+    width:550px;
+    line-height: 15px;
+  }
+  .slider__item{
+    width: 170px;
+  }
+  .slider__item .item__top{
+    height: 130px;
+  }
+  /* title and text at head of slide */
+  .slider__text{
+    font-size: 14px;
+  }
+  /* set vi tri cua phan noi dung hinh anh */
+  .slider__item .item__content{
+    bottom: 10px;
+    left: 15px;
+  }
+  .slider__item a{
+    font-size: 10px;
+  }
+   /*phần footer (reser) của slider */
+  .slider__item .item__reser{
+    padding: 5px 5px ;
+    /*line-height: 28px;*/
   }
   .slider__item .reser__cost{
     font-size: 30px;
   }
-
-  /* phần footer (reser) của slider */
-  .slider__item .item__reser{
-    padding: 5px 15px 15px 15px;
-    line-height: 20px;
-  }
-
   .slider__item .reser__button{
-    width: 100px;
-    height: 25px;
+    width: 80px;
+    height: 20px;
   }
   .slider__item .reser__cost{
     font-size: 20px;
@@ -897,29 +1317,63 @@ header, section, footer, aside, nav, main, article, figure {
   }
 
 }
-@media screen and ( min-width: 1024px ) {
+@media screen and ( min-width: 720px ){
   .slider__content {
-    width: 800px;
+    width:640px;
+  }
+  .slider__item{
+    width: 200px;
+  }
+  .slider__item .item__top{
+    height: 150px;
   }
 
-  .slider__item {
-    width: 255px;
+  .slider__item .item__reser{
+    padding: 2px 13px 11px 7px;
+    line-height: 25px;
   }
+  .slider__item .reser__button{
+    width: 100px;
+    height: 30px;
 
-  .slider__item a {
-    font-size: 12px;
-  }
-
-  /* set phan title trong slide */
-  .slider__item item__content .item__title {
-    font-size: 20px;
   }
 
 }
 
-  @media screen and ( min-width: 1280px ) {
+@media screen and ( min-width: 768px ){
+  .slider__content {
+    width:650px;
+    line-height: 15px;
+  }
+  .slider__item{
+    width: 205px;
+  }
+
+
+}
+@media screen and ( min-width: 1024px ) {
+  .slider__content {
+    width: 800px;
+  }
+  .slider__item {
+    width: 255px;
+  }
+  .slider__item a {
+    font-size: 12px;
+  }
+  .slider__item  .item__title {
+    font-size: 20px;
+  }
+  .slider__item .item__number, .item__point {
+    font-size: 8px;
+
+  }
+}
+
+  @media screen and ( min-width: 1200px ) {
     .slider__content {
       width: 1000px;
+      line-height: 28px;
     }
 
     .slider__item {
@@ -927,50 +1381,9 @@ header, section, footer, aside, nav, main, article, figure {
     }
 
     .slider__item .item__top {
-      width: 100%;
       height: 200px;
     }
-  }
-
-  @media screen and ( min-width: 1366px ) {
-
-    .slider__content {
-      width: 1100px;
-    }
-
-    .slider__item {
-      width: 350px;
-      /*height: 450px;*/
-    }
-
-    .slider__item .item__top {
-      width: 100%;
-      height: 290px;
-    }
-  }
-  @media screen and ( min-width: 1535px ) {
-    .slider__content {
-      width: 1140px;
-    }
-    .slider__text{
-      font-size: 16px;
-    }
-
-    /* set style cua 1 slide */
-    .slider__item {
-      width: 365px;
-    }
-
-    /* set vi tri cua phan noi dung hinh anh */
-    .slider__item .item__content{
-      bottom: 20px;
-      left: 25px;
-      line-height: 24px;
-
-    }
     .slider__item .item__content .item__decript{
-      font-size: 18px;
-      font-size: 18px;
       font-size: 18px;
     }
     /* set phan title trong slide */
@@ -992,7 +1405,7 @@ header, section, footer, aside, nav, main, article, figure {
     /* phan discount màu vàng phía trên bên phải */
     .slider__item .item__discount{
       right: -27px;
-      top: -3px;
+      top: -10px;
       font-size: 15px;
     }
 
@@ -1009,11 +1422,63 @@ header, section, footer, aside, nav, main, article, figure {
     }
   }
 
+  @media screen and ( min-width: 1366px ) {
+
+    .slider__content {
+      width: 1100px;
+    }
+    .slider__item {
+      width: 350px;
+    }
+    .slider__item .item__top {
+      height: 290px;
+    }
+    .slider__item .item__reser{
+      padding: 5px 15px 15px 15px;
+      line-height: 28px;
+    }
+    .slider__item a {
+      font-size: 18px;
+    }
+
+  }
+  @media screen and ( min-width: 1535px ) {
+    .title {
+      font-size: 26px;
+    }
+    .slider__content {
+      width: 1140px;
+    }
+    .slider__text{
+      font-size: 16px;
+    }
+    .slider__item {
+      width: 365px;
+    }
+    /* set vi tri cua phan noi dung hinh anh */
+    .slider__item .item__content{
+      bottom: 20px;
+      left: 25px;
+      line-height: 28px;
+    }
+    .slider__item .item__reser{
+      line-height: 40px;
+    }
+    .slider__item .reser__cost{
+      font-size: 42px;
+    }
+    .slider__item .item__reser p {
+      font-size: 25px;
+    }
+    .slider__item .reser__button {
+      width: 180px;
+      height: 40px;
+    }
+  }
   @media screen and ( min-width: 1680px ) {
     .slider__content {
       width: 1470px;
     }
-
     .slider__item {
       width: 450px;
       height: 450px;
@@ -1021,6 +1486,13 @@ header, section, footer, aside, nav, main, article, figure {
 
     .slider__item .item__top {
       height: 350px;
+    }
+    .slider__item .item__content .item__decript{
+      font-size: 20px;
+    }
+    /* set phan title trong slide */
+    .slider__item .item__title{
+      font-size: 26px;
     }
   }
 
@@ -1102,15 +1574,157 @@ header, section, footer, aside, nav, main, article, figure {
   .menu__item .item__cost b {
     font-size: 20px;
   }
+@media screen and ( min-width: 480px ) {
+  .menu {
+    width: 450px;
+    margin: 50px auto;
+  }
+  .menu__item{
+    padding: 10px 7px;
+    margin-bottom: 5px;
+  }
+  .menu__col {
+    width: 140px;
+  }
 
-  @media screen and ( min-width: 770px ) {
+  .menu__title {
+    font-size: 10px;
+    padding-bottom: 10px;
+  }
+
+  .menu__item .item__title {
+    font-size: 12px;
+  }
+
+  .menu__item .item_decript {
+    font-size: 8px;
+    padding-bottom: 0px;
+  }
+
+  .menu__item .item__point {
+    font-size: 6px;
+  }
+
+  .menu__item .item__cost {
+    padding-top: 3px;
+    font-size: 8px;
+    float: left;
+  }
+
+  .menu__item .item__cost b {
+    font-size: 12px;
+  }
+  .menu__item .item__content{
+    height: 65px;
+    overflow: hidden;
+  }
+
+}
+@media screen and ( min-width: 540px ) {
+  .menu {
+    width: 480px;
+  }
+
+  .menu__col {
+    width: 150px;
+  }
+
+  .menu__item .item__content{
+    height: auto;
+  }
+
+}
+@media screen and ( min-width: 640px ) {
+  .menu {
+    width: 550px;
+    margin: 50px auto;
+  }
+
+  .menu__col {
+    width: 170px;
+  }
+
+  .menu__title {
+    font-size: 12px;
+    padding-bottom: 10px;
+  }
+
+  .menu__item {
+    margin-bottom: 5px;
+
+  }
+
+  .menu__item .item__title {
+    font-size: 16px;
+  }
+
+
+  .menu__item .item__point {
+    font-size: 6px;
+  }
+
+  .menu__item .item__cost {
+    padding-top: 3px;
+    font-size: 8px;
+    float: right;
+  }
+
+  .menu__item .item__cost b {
+    font-size: 12px;
+  }
+
+}
+@media screen and ( min-width: 720px ) {
+  .menu {
+    width: 640px;
+    margin: 50px auto;
+  }
+
+  .menu__col {
+    width: 200px;
+  }
+
+  .menu__title {
+    font-size: 12px;
+    padding-bottom: 10px;
+  }
+
+  .menu__item {
+    margin-bottom: 5px;
+
+  }
+
+  .menu__item .item__title {
+    font-size: 16px;
+  }
+
+  .menu__item .item_decript {
+    font-size: 12px;
+    padding-bottom: 10px;
+  }
+
+  .menu__item .item__point {
+    font-size: 6px;
+  }
+
+  .menu__item .item__cost {
+    padding-top: 3px;
+    font-size: 8px;
+  }
+
+  .menu__item .item__cost b {
+    font-size: 12px;
+  }
+
+}
+  @media screen and ( min-width: 768px ) {
     .menu {
-      width: 600px;
+      width: 650px;
       margin: 50px auto;
     }
 
     .menu__col {
-      width: 190px;
+      width: 205px;
     }
 
     .menu__title {
@@ -1164,6 +1778,9 @@ header, section, footer, aside, nav, main, article, figure {
   .menu__item .item__point {
     font-size: 8px;
   }
+  .menu__title {
+    font-size: 15px;
+  }
 
   .menu__item .item__cost {
     padding-top: 3px;
@@ -1174,29 +1791,12 @@ header, section, footer, aside, nav, main, article, figure {
   }
 
 }
-  @media screen and ( min-width: 1280px ) {
+  @media screen and ( min-width: 1200px ) {
     .menu {
       width: 1000px;
     }
     .menu__col {
       width: 320px;
-    }
-  }
-  @media screen and ( min-width: 1366px ) {
-    .menu {
-      width: 1100px;
-    }
-
-    .menu__col {
-      width: 350px;
-    }
-  }
-  @media screen and ( min-width: 1435px ) {
-    .menu {
-      width: 1140px;
-    }
-    .menu__col {
-      width: 365px;
     }
     .menu__item .item__point {
       font-size: 12px;
@@ -1208,6 +1808,25 @@ header, section, footer, aside, nav, main, article, figure {
     .menu__item .item__cost b {
       font-size: 18px;
     }
+  }
+  @media screen and ( min-width: 1366px ) {
+    .menu {
+      width: 1100px;
+    }
+
+    .menu__col {
+      width: 350px;
+    }
+
+  }
+  @media screen and ( min-width: 1435px ) {
+    .menu {
+      width: 1140px;
+    }
+    .menu__col {
+      width: 365px;
+    }
+
   }
   @media screen and ( min-width: 1680px ) {
     .menu {
@@ -1315,23 +1934,90 @@ header, section, footer, aside, nav, main, article, figure {
   .registment__button a {
     color: #6a1415;
   }
+@media screen and ( min-width: 480px ) {
+  .registment__content {
+    width: 450px;
+    padding: 20px 0;
+  }
 
-  @media screen and ( min-width: 765px ) {
+  .registment__text p:first-child {
+    font-size: 12px;
+    padding-bottom: 3px;
+  }
+
+  .registment__text p:last-child {
+    font-size: 8px;
+  }
+
+  .registment__button {
+    padding-left: 20px;
+  }
+
+  .registment__button button {
+    top: 7px;
+    width: 84px;
+    height: 23px;
+    font-size: 9px;
+  }
+}
+/*@media screen and ( min-width: 540px ) {*/
+/*  .registment__content {*/
+/*    width: 400px;*/
+/*  }*/
+
+/*  .registment__text p:first-child {*/
+/*    font-size: 14px;*/
+/*    padding-bottom: 10px;*/
+/*  }*/
+
+/*  .registment__text p:last-child {*/
+/*    font-size: 8px;*/
+/*  }*/
+
+/*  .registment__button {*/
+/*    padding-left: 20px;*/
+/*  }*/
+
+/*  .registment__button button {*/
+/*    top: 15px;*/
+/*    width: 80px;*/
+/*    height: 20px;*/
+/*    font-size: 10px;*/
+/*  }
+}*/
+@media screen and ( min-width: 640px ) {
+  .registment__content {
+    width: 480px;
+  }
+
+  .registment__text p:first-child {
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
+  .registment__button button {
+    top: 15px;
+    width: 100px;
+    height: 25px;
+    font-size: 10px;
+  }
+}
+@media screen and ( min-width: 720px ) {
+  .registment__content {
+    width: 555px;
+  }
+
+  .registment__text p:last-child {
+    font-size: 10px;
+  }
+
+  .registment__button {
+    padding-left: 20px;
+  }
+
+}
+  @media screen and ( min-width: 768px ) {
     .registment__content {
-      width: 500px;
-    }
-
-    .registment__text p:first-child {
-      font-size: 14px;
-      padding-bottom: 10px;
-    }
-
-    .registment__text p:last-child {
-      font-size: 8px;
-    }
-
-    .registment__button {
-      padding-left: 20px;
+      width: 560px;
     }
 
     .registment__button button {
@@ -1367,6 +2053,17 @@ header, section, footer, aside, nav, main, article, figure {
   .registment__text p:last-child {
     font-size: 13px;
   }
+  .registment__button button {
+    top: 15px;
+    width: 147px;
+    height: 36px;
+    font-size: 13px;
+  }
+
+  .registment__button {
+    padding-left: 39px;
+
+  }
 
 }
 @media screen and ( min-width: 1536px ) {
@@ -1374,19 +2071,14 @@ header, section, footer, aside, nav, main, article, figure {
     width: 900px;
   }
   .registment__button {
-    width: 50%;
     padding-left: 50px;
   }
 
-
   .registment__button button {
-    font-size: 14px;
+    font-size: 15px;
     width: 160px;
     height: 40px;
-    top: 15px;
   }
-
-
 
 }
   @media screen and ( min-width: 1920px ) {
@@ -1511,51 +2203,117 @@ header, section, footer, aside, nav, main, article, figure {
     font-size: 12px;
     color: #444;
   }
+@media screen and ( min-width: 480px ) {
+  .footer__contenttop {
+    width: 430px;
+    font-size: 10px;
+  }
 
-  @media screen and ( min-width: 765px ) {
+  .footer__contenttop .footer__col dt a{
+    font-size: 10px;
+  }
+
+  .footer__contentbot .paycard {
+    padding: 5px 5px;
+  }
+
+  .footer__contentbot .paycard li {
+    padding: 0px 5px;
+  }
+
+
+  .footer__contenttop .footer__col .col__item {
+    margin-bottom: 5px;
+  }
+
+  .footer__contentbot .footer__title {
+    padding: 10px 0px 5px 0px;
+    font-size: 10px;
+
+  }
+  .footer__col img {
+    width: 100px;
+    height: 30px;
+  }
+
+  .footer__contentbot .social__icons i {
+    font-size: 20px;
+    width: 30px;
+  }
+
+  .footer__contenttop .footer__col dt {
+    padding-bottom: 5px;
+  }
+  .footer_dac {
+    font-size: 12px;
+    font-weight: 400;
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+  }
+
+}
+@media screen and ( min-width: 540px ) {
+  .footer__contenttop {
+    width: 440px;
+  }
+
+}
+@media screen and ( min-width: 640px ) {
+  .footer__contenttop {
+    width: 480px;
+  }
+  .footer__contentbot .paycard {
+    padding: 10px 30px;
+  }
+
+  .footer__contenttop .footer__col .col__item {
+    margin-bottom: 10px;
+  }
+
+  .footer__contentbot .footer__title {
+    padding: 20px 0px 10px 0px;
+    font-size: 15px;
+  }
+
+}
+@media screen and ( min-width: 720px ) {
+  .footer__contenttop {
+    width: 500px;
+  }
+
+  .footer__contenttop .footer__col dt a{
+    font-size: 10px;
+  }
+
+  .footer__contentbot .paycard li {
+    padding: 0px 10px;
+  }
+
+  .footer__contentbot .footer__title {
+    padding: 20px 0px 10px 0px;
+  }
+
+  /*.footer__contentbot .footer__title {*/
+  /*  padding: 10px 0 5px 0;*/
+  /*  font-size: 15px;*/
+  /*}*/
+}
+  @media screen and ( min-width: 768px ) {
     .footer__contenttop {
       width: 500px;
+      font-size: 8px;
+    }
+
+    .footer__contenttop .footer__col dt a{
       font-size: 10px;
-      color: #6e6e6e;
-    }
-
-    .footer__contenttop .footer__col dt {
-      font-size: 12px;
-      padding-bottom: 5px;
-    }
-
-    .footer__contentbot .paycard {
-      width: 80%;
-      padding: 10px 30px;
     }
 
     .footer__contentbot .paycard li {
       padding: 0px 10px;
     }
 
-
-
-    .footer__contenttop .footer__col .col__item {
-      margin-bottom: 10px;
-    }
-
     .footer__contentbot .footer__title {
-      padding: 20px 0px 10px 0px;
-    }
-
-    .footer__col img {
-      width: 100px;
-      height: 30px;
-    }
-
-    .footer__contentbot .social__icons i {
-      font-size: 20px;
-      width: 30px;
-    }
-
-    .footer__contentbot .footer__title {
-      font-size: 15px;
-      padding: 10px 0 5px 0;
       font-size: 15px;
     }
   }
@@ -1568,15 +2326,12 @@ header, section, footer, aside, nav, main, article, figure {
 
   .footer__contenttop .footer__col dt {
     font-size: 12px;
-    padding-bottom: 5px;
   }
 
-  .footer__contenttop .footer__col .col__item {
-    margin-bottom: 10px;
-  }
+  .footer__contentbot .social__icons i {
+    font-size: 29px;
+    width: 45px;
 
-  .footer__contentbot .footer__title {
-    padding: 20px 0px 10px 0px;
   }
 }
   @media screen and ( min-width: 1280px ) {
@@ -1585,34 +2340,92 @@ header, section, footer, aside, nav, main, article, figure {
     }
 
   }
-
   @media screen and ( min-width: 1366px ) {
     .footer__contenttop {
       width: 800px;
+      font-size: 14px;
     }
     .footer__contentbot .footer__title {
       font-size: 18px;
       padding: 15px 0 13px 0;
+    }
+    .footer__contenttop .footer__col dt a {
+       font-size: 15px;
+     }
+    .footer__contenttop .footer__col dt {
+      font-size: 15px;
+      padding-bottom: 15px;
+
+    }
+    .footer__contenttop .footer__col dd {
+      padding-bottom: 3px;
+
+    }
+    .footer__col img {
+      width: 180px;
+      height: 60px;
+
     }
   }
 
   @media screen and ( min-width: 1536px ) {
     .footer__contenttop {
       width: 900px;
+      font-size: 15px;
+    }
+    .footer__contenttop .footer__col dt a {
+      font-size: 15px;
+    }
+    .footer__contenttop .footer__col .col__item {
+      margin-bottom: 30px;
+
     }
 
     .footer__contenttop .footer__col dt {
       font-size: 14px;
     }
+    .footer__contentbot .paycard {
+      padding: 15px 100px;
+    }
+
+    .footer__contentbot .paycard li {
+      padding: 0px 15px;
+    }
+
+    .footer_dac {
+      font-size: 15px;
+      height: 40px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    .footer__logo img {
+      height: 32px;
+      width: 80px;
+    }
 
   }
   @media screen and ( min-width: 1680px ) {
-    .footer__contenttop {
-      width: 900px;
-    }
 
     .footer__contenttop .footer__col dt {
       font-size: 16px;
+    }
+    .footer__contentbot .social__icons i {
+
+      color: white;
+      width: 65px;
+      font-size: 40px;
+
+    }
+    .footer__contentbot .footer__title {
+      font-size: 24px;
+      padding: 35px 0 21px 0;
+    }
+
+    .footer_dac {
+      font-size: 25px;
+      font-weight: 400;
+      margin-top: 40px;
+      margin-bottom: 10px;
     }
 
   }
@@ -1625,26 +2438,13 @@ header, section, footer, aside, nav, main, article, figure {
     .footer__contenttop .footer__col dd {
     padding-bottom: 10px;
     }
-  }
+
     .footer__contenttop .footer__col dt {
       font-size: 18px;
 
     }
 
-    .footer__contentbot .social__icons i {
-      font-size: 20px;
-      width: 30px;
-    }
-
-    .footer__contentbot .footer__title {
-      font-size: 15px;
-      padding: 10px 0 5px 0;
-      font-size: 15px;
-    }
-    /*.menu__col{*/
-    /*  width: 500px;*/
-    /*}*/
-
+  }
 
 
 
