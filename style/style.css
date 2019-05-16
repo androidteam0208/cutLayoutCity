@@ -55,7 +55,7 @@ header, section, footer, aside, nav, main, article, figure {
   }
   .header__menuicon{
     display: inline-block;
-    /*position: absolute;*/
+    position: absolute;
     padding: 10px;
 
   }
@@ -161,35 +161,52 @@ header, section, footer, aside, nav, main, article, figure {
     }
     @media only screen and ( min-width: 720px ) {
       .header__content {
-        min-width: 690px;
+        min-width: 725px;
         min-height: 95px;
       }
-      .header__menuicon {
-        display: none;
-      }
+
       .header__form{
         top: 28px;
         bottom: unset;
-        left: 130px;
+        left: 190px;
         max-width: 440px;
       }
 
       .header__logo img {
         top: 26px;
-        left: 0px;
+        left: 50px;
       }
       .header__icon {
         top: 30px;
         font-size: 30px;
       }
+      .header__menuicon {
+        position: absolute;
+        top: 13px;
+      }
+
 
 
     }
     @media only screen and ( min-width: 768px ) {
 
       .header__content {
-        min-width: 690px;
+        min-width: 760px;
       }
+      .header__form {
+        left: 195px;
+      }
+      .header__logo img {
+        left: 50px;
+      }
+      .header__menuicon {
+        position: absolute;
+        top: 13px;
+      }
+      .header__icon {
+        top: 25px;
+      }
+
 
     }
     @media only screen and ( min-width: 1024px ) {
@@ -214,6 +231,9 @@ header, section, footer, aside, nav, main, article, figure {
       .header__icon {
         top: 15px;
         font-size: 28px;
+      }
+      .header__menuicon {
+        display: none;
       }
     }
 
@@ -271,10 +291,10 @@ header, section, footer, aside, nav, main, article, figure {
       z-index: 2;
     }
 
-    .navbar__ul {
+    .navbar .navbar__ul {
       display: flex;
       width: 1200px;
-      height: 100%;
+      /*height: 100%;*/
       line-height: 35px;
       margin: 0 auto;
     }
@@ -297,7 +317,7 @@ header, section, footer, aside, nav, main, article, figure {
 
     /* 4 item first */
     .four_item {
-      height: 100%;
+      /*height: 100%;*/
       background-color: #5d0f19;
     }
 
@@ -334,6 +354,49 @@ header, section, footer, aside, nav, main, article, figure {
     .dropdown:hover .dropdown-content {
       display: block;
     }
+
+    /*nhấp vào menu icon sẽ hiện ra List*/
+.navbarList{
+  min-width: 100%;
+  min-height: 100%;
+  background-color: #a21527;
+}
+      .navbarList a{
+        color: white;
+      }
+      navbarList .navbar__ul{
+        display: block;
+      }
+      .navbarList .navbar__li {
+        min-width: 70px;
+        list-style: none;
+        padding: 0 10px;
+        font-size: 19px;
+        font-weight: 600;
+        height: 53px;
+        line-height : 53px;
+        border-bottom: 1px solid white;
+      }
+
+      .navbarList .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: lightblue;
+        min-width: 100%;
+        box-shadow: 0 5px 7px 0 rgba(255, 0, 0, 0.2);
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        top: 52px;
+        left: 0px;
+      }
+      .dropdown-content a {
+        color: #ffff;
+        padding: 0px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
     @media only screen and ( min-width: 320px ) {
       .navbar {
         display: none;
@@ -341,6 +404,7 @@ header, section, footer, aside, nav, main, article, figure {
       header__menuicon:active{
         display: block;
       }
+
     }
 
     @media only screen and ( min-width: 440px ) {
@@ -353,30 +417,6 @@ header, section, footer, aside, nav, main, article, figure {
 
     }
     @media only screen and ( min-width: 720px ) {
-      /*.navbar {*/
-      /*  display: block;*/
-
-      /*}*/
-      /*.navbar__ul {*/
-      /*  min-width: 690px;*/
-      /*  line-height: 25px;*/
-      /*  flex-wrap: wrap;*/
-      /*}*/
-
-      /*.navbar__li {*/
-      /*  min-width: 45px;*/
-      /*  font-size: 8px;*/
-      /*  padding: 0 5px;*/
-      /*}*/
-
-      /*.dropdown-content {*/
-      /*  top: 25px;*/
-      /*  min-width: 100px;*/
-      /*}*/
-
-      /*.dropdown-content a {*/
-      /*  padding: 0px 2px;*/
-      /*}*/
       .navbar__ul {
         min-width: 720px;
       }
@@ -414,17 +454,21 @@ header, section, footer, aside, nav, main, article, figure {
       }
 
       .navbar__ul {
-        width: 870px;
+        min-width: 870px;
         line-height: 30px;
+        /*padding-left: 10px;*/
       }
 
       .navbar__li {
         min-width: 62px;
-        font-size: 8px;
+
+      }
+      .navbar__li a{
+        font-size: 15px;
       }
 
       .dropdown-content {
-        top: 30px;
+        top: 35px;
         min-width: 200px;
       }
 
@@ -923,7 +967,7 @@ header, section, footer, aside, nav, main, article, figure {
       }
 
       .gallery__col {
-        max-width: 256px;
+        max-width: 262px;
       }
 
       .gallery__title {
@@ -933,6 +977,7 @@ header, section, footer, aside, nav, main, article, figure {
       .gallery__item {
         margin-bottom: 5px;
       }
+
 
     }
     @media only screen and ( min-width: 640px ) {
@@ -1142,7 +1187,7 @@ header, section, footer, aside, nav, main, article, figure {
 
     /* dàn hàng ngang */
     .slider__content {
-      width: 320px;
+      max-width: 320px;
       display: flex;
       justify-content: space-between;
       margin: 0 auto;
@@ -1247,17 +1292,13 @@ header, section, footer, aside, nav, main, article, figure {
 @media only screen and ( min-width: 320px ) {
   .slider__content {
     max-width: 320px;
-    line-height: 25px;
+    line-height: 22px;
     flex-wrap: wrap;
   }
 
   .slider__item {
     min-width: 320px;
-    margin: 0 auto;
-  }
-
-  .slider__content .item2, .slider__content .item3 {
-    display: none;
+    margin: 15px auto;
   }
 
   .slider__item .item__top {
@@ -1277,6 +1318,7 @@ header, section, footer, aside, nav, main, article, figure {
   .slider__item .item__content {
     bottom: 7px;
     left: 5px;
+    line-height: 28px;
   }
 
   .slider__item a {
@@ -1285,9 +1327,10 @@ header, section, footer, aside, nav, main, article, figure {
 
   }
 
+
   /* set phan title trong slide */
   .slider__item .item__title {
-    font-size: 16px;
+    font-size: 28px;
   }
 
   .slider__item .item__number, .item__point {
@@ -1383,11 +1426,11 @@ header, section, footer, aside, nav, main, article, figure {
       }
 
       .slider__item {
-        min-width: 290px;
+        min-width: 600px;
       }
 
       .slider__item .item__top {
-        height: 130px;
+        min-height: 280px;
       }
 
       /* title and text at head of slide */
@@ -1401,14 +1444,23 @@ header, section, footer, aside, nav, main, article, figure {
         left: 15px;
       }
 
-      .slider__item a {
-        font-size: 15px;
+      .slider__item .item__title {
+        font-size: 42px;
       }
+      .slider__item a {
+
+        font-size: 22px;
+
+      }
+      .slider__item .item__number, .item__point {
+        font-size: 17px;
+      }
+
 
       /*phần footer (reser) của slider */
       .slider__item .item__reser {
-        padding: 5px 5px;
-        /*line-height: 28px;*/
+        padding: 5px 16px;
+        line-height: 40px;
       }
 
       .slider__item .reser__cost {
@@ -1416,14 +1468,14 @@ header, section, footer, aside, nav, main, article, figure {
       }
 
       .slider__item .reser__button {
-        width: 120px;
-        height: 25px;
+        width: 200px;
+        height: 35px;
 
       }
 
 
       .slider__item .reser__cost {
-        font-size: 20px;
+        font-size: 36px;
       }
 
       .slider__item .item__reser p {
@@ -1443,7 +1495,7 @@ header, section, footer, aside, nav, main, article, figure {
 
 
       .slider__item {
-        min-width: 335px;
+        min-width: 700px;
       }
 
       .slider__item .item__top {
@@ -1451,26 +1503,22 @@ header, section, footer, aside, nav, main, article, figure {
       }
 
       .slider__item .item__reser {
-        padding: 2px 13px 11px 7px;
-        line-height: 25px;
+        padding: 10px 28px 19px 25px;
+        line-height: 35px;
       }
 
-      .slider__item .reser__button {
-        width: 100px;
-        height: 30px;
 
-      }
 
     }
 
     @media only screen and ( min-width: 768px ) {
       .slider__content {
-        max-width: 760px;
+        max-width: 750px;
         line-height: 15px;
       }
 
       .slider__item {
-        min-width: 360px;
+        min-width: 660px;
       }
 
 
@@ -1499,6 +1547,18 @@ header, section, footer, aside, nav, main, article, figure {
       .slider__item .item__number, .item__point {
         font-size: 12px;
 
+      }
+      .slider__item .item__reser {
+        padding: 13px 5px;
+      }
+
+      .slider__item .reser__button {
+        width: 120px;
+        height: 35px;
+
+      }
+      .slider__item .item__top {
+        min-height: 200px;
       }
     }
 
@@ -1690,7 +1750,7 @@ header, section, footer, aside, nav, main, article, figure {
     }
 
     .menu__col {
-      width: 365px;
+      max-width: 365px;
     }
 
     .menu__item {
@@ -1736,9 +1796,7 @@ header, section, footer, aside, nav, main, article, figure {
     flex-wrap: wrap;
   }
 
-  .menu .col2, .menu .col3 {
-    display: none;
-  }
+
 
   .menu__item {
     padding: 18px 7px;
@@ -1748,7 +1806,7 @@ header, section, footer, aside, nav, main, article, figure {
 
   .menu__col {
     max-width: 400px;
-    margin: 0 auto;
+    margin: 15px auto;
   }
 
   .menu__title {
@@ -1767,7 +1825,7 @@ header, section, footer, aside, nav, main, article, figure {
 
   .menu__item .item__point {
 
-    font-size: 14px;
+    font-size: 18px;
 
   }
 
@@ -1795,19 +1853,20 @@ header, section, footer, aside, nav, main, article, figure {
         flex-wrap: wrap;
       }
 
-      .menu .col2,.menu .col3 {
-        display: none;
-      }
+      /*.menu .col2,.menu .col3 {*/
+      /*  display: none;*/
+      /*}*/
 
       .menu__item {
         padding: 18px 7px;
         margin-bottom: 15px;
         min-height: 120px;
+        padding-right: 50px;
       }
 
       .menu__col {
         max-width: 400px;
-        margin: 0 auto;
+        /*margin: 0 auto;*/
       }
 
       .menu__title {
@@ -1825,9 +1884,7 @@ header, section, footer, aside, nav, main, article, figure {
       }
 
       .menu__item .item__point {
-
-        font-size: 14px;
-
+        font-size: 21px;
       }
 
       .menu__item .item__cost {
@@ -1851,15 +1908,26 @@ header, section, footer, aside, nav, main, article, figure {
       }
 
       .menu__col {
-        max-width: 250px;
+        max-width: 500px;
+      }
+      .menu__item{
+        /*padding-right: 150px;*/
+        padding-left: 31px;
+      }
+      .menu__item .item__cost{
+        padding-left: 95px;
+        float: right;
+      }
+      .menu__item .item__point {
+        font-size: 15px;
       }
 
-      .menu__item .item__content {
-        height: auto;
-      }
-      .menu .col2{
-        display: block;
-      }
+      /*.menu__item .item__content {*/
+      /*  height: auto;*/
+      /*}*/
+      /*.menu .col2{*/
+      /*  display: block;*/
+      /*}*/
 
     }
     @media only screen and ( min-width: 640px ) {
@@ -1869,7 +1937,7 @@ header, section, footer, aside, nav, main, article, figure {
       }
 
       .menu__col {
-        max-width: 300px;
+        max-width: 600px;
       }
 
       .menu__title {
@@ -1878,11 +1946,14 @@ header, section, footer, aside, nav, main, article, figure {
 
       .menu__item {
         margin-bottom: 5px;
+        padding-right: 0px;
+
 
       }
 
       .menu__item .item__cost {
-        padding-top: 3px;
+        padding: 3px 24px 5px 120px;
+        float: right;
 
       }
 
@@ -1890,12 +1961,12 @@ header, section, footer, aside, nav, main, article, figure {
     }
     @media only screen and ( min-width: 720px ) {
       .menu {
-        max-width: 700px;
+        max-width: 710px;
         margin: 50px auto;
       }
 
       .menu__col {
-        max-width: 340px;
+        max-width: 700px;
       }
 
       .menu__title {
@@ -1908,7 +1979,7 @@ header, section, footer, aside, nav, main, article, figure {
       }
 
       .menu__item .item__cost {
-        padding-top: 3px;
+        padding: 3px 24px 5px 185px;
 
       }
 
@@ -1921,11 +1992,11 @@ header, section, footer, aside, nav, main, article, figure {
       }
 
       .menu__col {
-        max-width: 240px;
+        max-width: 700px;
       }
 
       .menu__title {
-        font-size: 12px;
+        font-size: 20px;
         padding-bottom: 10px;
       }
 
@@ -1953,7 +2024,10 @@ header, section, footer, aside, nav, main, article, figure {
       }
 
       .menu__col {
-        max-width: 285px;
+        max-width: 290px;
+      }
+      .menu__item{
+        padding-left: 10px;
       }
 
       .menu__item .item_decript {
@@ -1964,12 +2038,9 @@ header, section, footer, aside, nav, main, article, figure {
         font-size: 10px;
       }
 
-      .menu__title {
-        font-size: 15px;
-      }
 
       .menu__item .item__cost {
-        padding-top: 3px;
+        padding: 0px 8px 0px 26px;
         font-size: 12px;
         float: right;
       }
@@ -1989,7 +2060,7 @@ header, section, footer, aside, nav, main, article, figure {
       }
 
       .menu__col {
-        max-width: 320px;
+        max-width: 325px;
       }
 
       .menu__item .item__point {
